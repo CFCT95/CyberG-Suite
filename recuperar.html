@@ -9,11 +9,11 @@
 <body>
   <div class="form-container">
     <h2>Recuperar contraseña</h2>
-    <form>
-      <input type="email" placeholder="Correo electrónico" required>
+    <form method="POST" action="recuperar.php">
+      <input type="email" name="correo" placeholder="Correo electrónico" required>
       <button type="submit">Enviar instrucciones</button>
     </form>
-    <a href="login.html" class="link">Volver al inicio de sesión</a>
+    <a href="login.php" class="link">Volver al inicio de sesión</a>
   </div>
 </body>
 </html>
