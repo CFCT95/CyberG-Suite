@@ -1,0 +1,50 @@
+/**
+ * Estilos para el componente StatsCard
+ */
+
+.stats-card {
+  background: rgba(255, 106, 0, 0.15);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: 1px solid rgba(255, 106, 0, 0.3);
+  transition: var(--transition);
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.stats-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.stats-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin: 0.5rem 0;
+}
+
+.stats-label {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.stats-card-primary {
+  border-color: rgba(255, 106, 0, 0.3);
+}
+
+.stats-card-success {
+  background: rgba(40, 167, 69, 0.15);
+  border-color: rgba(40, 167, 69, 0.3);
+}
+
+.stats-card-success .stats-number {
+  color: var(--color-success);
+}
+

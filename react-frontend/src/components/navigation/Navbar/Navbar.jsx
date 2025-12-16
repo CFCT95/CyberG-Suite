@@ -73,7 +73,7 @@ const Navbar = () => {
               className={`navbar-link ${isActive('/clientes') ? 'active' : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
-              Clientes
+              Ver Registros
             </Link>
             <Button variant="danger" onClick={handleLogout} className="navbar-logout">
               Cerrar Sesión

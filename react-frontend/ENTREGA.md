@@ -4,7 +4,7 @@
 
 **Nombre del Proyecto:** CyberG Suite - Frontend React  
 **Versión:** 1.0.0  
-**Fecha de Entrega:** 2024  
+**Fecha de Entrega:** 2025  
 **Tecnología:** React JS 18.2.0
 
 ## 📦 Contenido de la Entrega
@@ -100,8 +100,4 @@ Ver archivo `REPOSITORIO.md` para información del repositorio.
 ## 👨‍💻 Autor
 
 Desarrollado como proyecto académico.
-
----
-
-**Gracias por revisar el proyecto.**
 

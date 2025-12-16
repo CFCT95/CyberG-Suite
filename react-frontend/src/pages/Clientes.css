@@ -1,0 +1,81 @@
+/**
+ * Estilos para la página Clientes
+ */
+
+.clientes-page {
+  animation: fadeIn 0.3s ease-in;
+}
+
+.clientes-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.page-title {
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.clientes-card {
+  margin-bottom: 2rem;
+}
+
+.clientes-table-container {
+  overflow-x: auto;
+}
+
+.clientes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.clientes-table th,
+.clientes-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.clientes-table th {
+  background: rgba(255, 106, 0, 0.3);
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.clientes-table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.clientes-info {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.clientes-info a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.clientes-info a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .clientes-table-container {
+    font-size: 0.875rem;
+  }
+  
+  .clientes-table th,
+  .clientes-table td {
+    padding: 0.5rem;
+  }
+}
+

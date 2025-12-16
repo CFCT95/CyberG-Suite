@@ -60,5 +60,5 @@ Proyecto de uso educativo.
 
 ---
 
-**Fecha de entrega:** 2024
+**Fecha de entrega:** 2025
 

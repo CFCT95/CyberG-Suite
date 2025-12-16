@@ -11,6 +11,7 @@ import Layout from './components/layout/Layout';
 import LoginForm from './components/auth/LoginForm';
 import RegisterForm from './components/auth/RegisterForm';
 import Dashboard from './pages/Dashboard';
+import Clientes from './pages/Clientes';
 import './styles/global.css';
 
 /**
@@ -32,6 +33,16 @@ function App() {
               <ProtectedRoute>
                 <Layout>
                   <Dashboard />
+                </Layout>
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/clientes"
+            element={
+              <ProtectedRoute>
+                <Layout>
+                  <Clientes />
                 </Layout>
               </ProtectedRoute>
             }
