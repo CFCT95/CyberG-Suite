@@ -1,0 +1,157 @@
+/**
+ * Estilos para el componente Navbar
+ */
+
+.navbar {
+  background: rgba(255, 106, 0, 0.1);
+  border-bottom: 2px solid rgba(255, 106, 0, 0.3);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: var(--color-primary);
+}
+
+.logo-img {
+  max-width: 50px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-user-info {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.user-name {
+  font-weight: bold;
+  color: var(--color-primary);
+  font-size: 1rem;
+}
+
+.user-email {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.navbar-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.navbar-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+}
+
+.navbar-link:hover {
+  color: var(--color-primary);
+  background-color: rgba(255, 106, 0, 0.1);
+}
+
+.navbar-link.active {
+  color: var(--color-primary);
+  background-color: rgba(255, 106, 0, 0.2);
+}
+
+.navbar-logout {
+  margin-left: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar-menu-toggle {
+    display: flex;
+  }
+
+  .navbar-user-info {
+    display: none;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg-primary);
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition);
+  }
+
+  .navbar-menu-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-logout {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+

@@ -1,0 +1,48 @@
+/**
+ * Estilos para el componente LoginForm
+ */
+
+.login-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.login-form {
+  background: var(--bg-card);
+  padding: 2.5rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  color: var(--color-primary);
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.login-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.login-link {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  transition: var(--transition);
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: var(--color-primary-dark);
+}
+

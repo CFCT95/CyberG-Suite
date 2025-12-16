@@ -1,0 +1,91 @@
+/**
+ * Estilos para el componente Alert
+ */
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+  position: relative;
+  animation: slideUp 0.3s ease-out;
+}
+
+.alert-icon {
+  font-size: 1.25rem;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.alert-message {
+  flex: 1;
+  font-size: 0.9375rem;
+}
+
+.alert-close {
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+  flex-shrink: 0;
+}
+
+.alert-close:hover {
+  opacity: 1;
+}
+
+/* Tipo Success */
+.alert-success {
+  background-color: rgba(40, 167, 69, 0.2);
+  border: 1px solid rgba(40, 167, 69, 0.3);
+  color: #d4edda;
+}
+
+.alert-success .alert-icon {
+  color: var(--color-success);
+}
+
+/* Tipo Error */
+.alert-error {
+  background-color: rgba(220, 53, 69, 0.2);
+  border: 1px solid rgba(220, 53, 69, 0.3);
+  color: #f8d7da;
+}
+
+.alert-error .alert-icon {
+  color: var(--color-danger);
+}
+
+/* Tipo Warning */
+.alert-warning {
+  background-color: rgba(255, 193, 7, 0.2);
+  border: 1px solid rgba(255, 193, 7, 0.3);
+  color: #fff3cd;
+}
+
+.alert-warning .alert-icon {
+  color: var(--color-warning);
+}
+
+/* Tipo Info */
+.alert-info {
+  background-color: rgba(23, 162, 184, 0.2);
+  border: 1px solid rgba(23, 162, 184, 0.3);
+  color: #d1ecf1;
+}
+
+.alert-info .alert-icon {
+  color: var(--color-info);
+}
+
