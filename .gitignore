@@ -7,8 +7,9 @@ config.local.php
 *.tmp
 .DS_Store
 
-# Archivos HTML temporales (para PDF)
-*.html
+# Archivos HTML temporales (para PDF) - solo en la raíz
+/*.html
+!react-frontend/
 
 # Dependencias (si se usa Composer)
 /vendor/
