@@ -4,12 +4,12 @@
 
 ### 📊 Estadísticas del Proyecto
 
-- **Total de archivos:** 148 archivos
-- **Tamaño del proyecto:** ~616 KB
-- **Componentes React:** 15 componentes
-- **Páginas:** 1 página (Dashboard)
+- **Total de archivos:** 50+ archivos
+- **Tamaño del proyecto:** ~208 KB
+- **Componentes React:** 20+ componentes
+- **Páginas:** 2 páginas (Dashboard, Clientes)
 - **Servicios API:** 1 servicio completo
-- **Commits Git:** 3 commits organizados
+- **Commits Git:** 7+ commits organizados
 
 ### 🧹 Limpieza Realizada
 
@@ -74,6 +74,11 @@ react-frontend/
 - ✅ Navbar - Barra de navegación responsive
 - ✅ ProtectedRoute - Protección de rutas
 
+#### Componentes de Dashboard
+- ✅ UserInfoCard - Tarjeta de información del usuario
+- ✅ StatsCard - Tarjeta de estadísticas reutilizable
+- ✅ QuickActionsPanel - Panel de acciones rápidas
+
 #### Componentes UI Base
 - ✅ Button - Botón reutilizable con variantes
 - ✅ InputField - Campo de entrada con validación
@@ -81,9 +86,13 @@ react-frontend/
 - ✅ Card - Tarjeta reutilizable
 - ✅ LoadingSpinner - Indicador de carga
 
+#### Componentes de Visualización
+- ✅ EmptyState - Estado vacío con mensaje
+
 #### Layout y Páginas
 - ✅ Layout - Estructura principal
-- ✅ Dashboard - Página principal
+- ✅ Dashboard - Página principal mejorada
+- ✅ Clientes - Página de visualización de registros
 
 ### 🔧 Tecnologías Utilizadas
 
