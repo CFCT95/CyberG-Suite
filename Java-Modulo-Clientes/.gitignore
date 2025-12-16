@@ -1,0 +1,28 @@
+# Archivos compilados
+build/
+*.class
+*.jar
+
+# JDBC Driver (no versionar, debe descargarse)
+lib/mysql-connector-java-*.jar
+
+# Archivos del IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.bak
+*~
+

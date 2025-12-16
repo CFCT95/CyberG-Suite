@@ -47,7 +47,7 @@ CyberG Suite es una plataforma que permite a las empresas registrarse y evaluar 
    - Editar el archivo `db.php` si es necesario
    - Por defecto está configurado para XAMPP:
      - Servidor: 127.0.0.1
-     - Puerto: 3307
+     - Puerto: 3306
      - Usuario: root
      - Contraseña: (vacía)
      - Base de datos: improve

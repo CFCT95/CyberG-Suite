@@ -6,7 +6,7 @@ ini_set('display_startup_errors', 1);
 
 // Configuración de la base de datos
 $servername = "127.0.0.1";
-$port = 3307; // MySQL en XAMPP está corriendo en el puerto 3307
+$port = 3306; // MySQL en XAMPP está corriendo en el puerto 3306
 $username = "root";
 $password = ""; // XAMPP por defecto tiene contraseña vacía
 $dbname = "improve"; // Nombre de la base de datos

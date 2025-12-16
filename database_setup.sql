@@ -1,5 +1,3 @@
--- Script para crear la base de datos y tabla CLIENTE
--- Ejecutar este script en phpMyAdmin o desde la línea de comandos de MySQL
 
 -- Crear la base de datos
 CREATE DATABASE IF NOT EXISTS improve CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

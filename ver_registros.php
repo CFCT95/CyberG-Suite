@@ -163,7 +163,7 @@ if ($result && $result->num_rows > 0) {
       <h3>ℹ️ Información de Conexión</h3>
       <p><strong>Base de datos:</strong> improve</p>
       <p><strong>Tabla:</strong> CLIENTE</p>
-      <p><strong>Servidor:</strong> 127.0.0.1:3307</p>
+      <p><strong>Servidor:</strong> 127.0.0.1:3306</p>
     </div>
   </div>
 </body>
