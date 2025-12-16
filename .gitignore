@@ -9,6 +9,7 @@ config.local.php
 
 # Archivos HTML temporales (para PDF) - solo en la raíz
 /*.html
+# Permitir HTML en react-frontend (necesario para el build)
 !react-frontend/
 
 # Dependencias (si se usa Composer)
