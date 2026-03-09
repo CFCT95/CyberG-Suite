@@ -4,12 +4,12 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 
-// Configuración de la base de datos
-$servername = "127.0.0.1";
-$port = 3306; // MySQL en XAMPP está corriendo en el puerto 3306
-$username = "root";
-$password = ""; // XAMPP por defecto tiene contraseña vacía
-$dbname = "improve"; // Nombre de la base de datos
+// Configuración de la base de datos – usa variables de entorno si existen, sino usa defaults locales
+$servername = getenv('DB_HOST') ?: '127.0.0.1';
+$port       = (int)(getenv('DB_PORT') ?: 3306);
+$username   = getenv('DB_USER') ?: 'root';
+$password   = getenv('DB_PASS') ?: '';
+$dbname     = getenv('DB_NAME') ?: 'improve';
 
 // Primero conectar sin seleccionar base de datos para verificar servidor
 $conn_temp = new mysqli($servername, $username, $password, "", $port);

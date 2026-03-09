@@ -55,9 +55,9 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Diagrama de clases actualizado | **Parcial** | El `INFORME_TECNICO_ESTANDARES_CODIFICACION.md` contiene las clases PHP (`Cliente`, `ClienteRepository`, `ClienteService`) con atributos y métodos completos. No hay imagen de diagrama UML (.png/.jpg). **Mejora:** exportar el diagrama de clases como imagen desde cualquier herramienta UML. **Captura manual:** sección "Ejemplos de Implementación" del informe, líneas 982–1082. Ruta: `./evidencias_72/diagrama_clases_php.png` |
-| Diagrama de paquetes actualizado | **Parcial** | Estructura de paquetes/carpetas bien definida pero no hay diagrama visual. La organización existe en código: `src/components/ui/`, `auth/`, `navigation/`, `layout/`, `dashboard/`, `data/`. **Captura manual:** ejecutar `tree` o capturar explorador de archivos de la carpeta `react-frontend/src/`. Ruta: `./evidencias_72/estructura_paquetes.png` |
-| Diagrama de componentes actualizado | **Parcial** | La arquitectura de componentes está implementada (React components con props e interfaces definidas). No hay diagrama visual. **Captura manual:** `react-frontend/src/App.jsx` completo (muestra todas las dependencias entre componentes). Ruta: `./evidencias_72/diagrama_componentes_app.png` |
+| Diagrama de clases actualizado | **Cumple** | Diagrama Mermaid con entidad `CLIENTE` y clases PHP con atributos, métodos y relaciones. URL: [DIAGRAMAS.md – Sección 1](https://github.com/CFCT95/CyberG-Suite/blob/main/DIAGRAMAS.md#1-diagrama-de-clases) |
+| Diagrama de paquetes actualizado | **Cumple** | Diagrama Mermaid con capas Backend PHP, Base de Datos, Frontend (context/services/utils/pages/components). URL: [DIAGRAMAS.md – Sección 2](https://github.com/CFCT95/CyberG-Suite/blob/main/DIAGRAMAS.md#2-diagrama-de-paquetes) |
+| Diagrama de componentes actualizado | **Cumple** | Diagrama Mermaid flujo `main.jsx` → `App.jsx` → `AuthContext` → rutas → páginas → widgets → `api.js` → Backend PHP. URL: [DIAGRAMAS.md – Sección 3](https://github.com/CFCT95/CyberG-Suite/blob/main/DIAGRAMAS.md#3-diagrama-de-componentes) |
 | Capas identificadas y ubicación de componentes | **Cumple** | Capas claramente separadas: Presentación (`react-frontend/src/`), Lógica de Negocio (`login.php`, `registro.php`, `dashboard.php`), Acceso a Datos (`db.php`, `ver_registros.php`), Base de Datos (MySQL/`database_setup.sql`). **Captura manual:** `react-frontend/src/services/api.js` líneas 1–50 (capa de integración). Ruta: `./evidencias_72/capas_arquitectura.png` |
 
 ---
@@ -109,7 +109,7 @@
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
 | Mecanismos de seguridad implementados (auth, roles, permisos) | **Cumple** | Autenticación: sesiones PHP + localStorage React. Rutas protegidas con `ProtectedRoute`. Interceptor 401 en Axios redirige a `/login`. `password_hash(PASSWORD_DEFAULT)` para contraseñas. **Captura manual:** `react-frontend/src/components/navigation/ProtectedRoute/ProtectedRoute.jsx` completo. Ruta: `./evidencias_72/seguridad_protected_route.png` |
-| Buenas prácticas: variables de entorno, no credenciales en repo | **Parcial** | Credenciales de BD hardcoded en `db.php` (`$username = "root"`, `$password = ""`). Funcional para entorno local XAMPP pero no sigue la práctica de variables de entorno. **Mejora para GA10/11:** crear `config.php` con `getenv()` o usar `.env` con `vlucas/phpdotenv`. El `.gitignore` ya excluye `config.local.php`. **Captura manual:** `.gitignore` líneas 1–5 mostrando exclusión de `config.local.php`. Ruta: `./evidencias_72/gitignore_seguridad.png` |
+| Buenas prácticas: variables de entorno, no credenciales en repo | **Cumple** | `db.php` actualizado: usa `getenv()` para `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASS`, `DB_NAME` con fallback a valores XAMPP locales. URL: [db.php](https://github.com/CFCT95/CyberG-Suite/blob/main/db.php#L8-L12) |
 | Validación de entradas y controles básicos | **Cumple** | Client-side: `validateEmail`, `validatePassword`, `validatePhone`, `validateRequired`, `validatePasswordMatch` en `validation.js`. Server-side: prepared statements MySQLi en `login.php`, `registro.php`. Sanitización con `htmlspecialchars()`. **Captura manual:** `react-frontend/src/utils/validation.js` líneas 1–60. Ruta: `./evidencias_72/validacion_entradas.png` |
 
 ---
@@ -138,7 +138,7 @@
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
 | URLs: repositorio, demo, API docs, tablero | **Cumple** | Repositorio: https://github.com/CFCT95/CyberG-Suite.git (público). Demo local: `http://localhost/CyberG-Suite/`. API: `http://localhost/CyberG-Suite/login.php`, `/registro.php`, etc. Documentado en `README.md` línea 134. **Captura manual:** página principal de GitHub del repo. Ruta: `./evidencias_72/repositorio_github.png` |
-| Archivos compilados/build (si aplica) | **Parcial** | No se ha ejecutado `npm run build`. El directorio `dist/` no existe. El frontend corre en modo desarrollo. **Mejora:** ejecutar `npm run build` en `react-frontend/` y verificar que genera `dist/`. Para entorno académico el modo dev es aceptable. |
+| Archivos compilados/build (si aplica) | **Cumple** | `npm run build` ejecutado. Genera `react-frontend/dist/` con `index.html` (0.49 kB), `assets/index.css` (14.1 kB), `assets/index.js` (222 kB). 132 módulos transformados. URL: [react-frontend/dist/](https://github.com/CFCT95/CyberG-Suite/tree/main/react-frontend/dist) |
 | PDF con checklist diligenciada + observaciones + enlaces | **Pendiente** | Este documento (`EVIDENCIA_72_CHECKLIST.md`) es la base. **Acción requerida:** convertir este archivo a PDF (usar VS Code → "Open Preview" → "Print to PDF", o Markdown to PDF extension). Guardar como `EVIDENCIA_72_GA08_3070422.pdf`. |
 
 ---
@@ -149,18 +149,18 @@
 |---|---|---|---|---|
 | 1. Requerimientos y alcance | 3 | 3 | 0 | 0 |
 | 2. Casos de uso / HU | 2 | 2 | 0 | 0 |
-| 3. Arquitectura y diagramas | 4 | 1 | 3 | 0 |
+| 3. Arquitectura y diagramas | 4 | 4 | 0 | 0 |
 | 4. Navegación y UI | 2 | 2 | 0 | 0 |
 | 5. Codificación e integración | 6 | 6 | 0 | 0 |
 | 6. Control de versiones | 3 | 3 | 0 | 0 |
 | 7. Librerías y dependencias | 3 | 3 | 0 | 0 |
-| 8. Seguridad | 3 | 2 | 1 | 0 |
+| 8. Seguridad | 3 | 3 | 0 | 0 |
 | 9. Pruebas | 2 | 0 | 0 | 2 |
 | 10. Ambientes y BD | 3 | 3 | 0 | 0 |
-| 11. Evidencias y entrega | 3 | 1 | 1 | 1 |
-| **TOTAL** | **34** | **26** | **5** | **3** |
+| 11. Evidencias y entrega | 3 | 2 | 0 | 1 |
+| **TOTAL** | **34** | **31** | **0** | **3** |
 
-**Porcentaje de cumplimiento:** 26/34 = **76% Cumple** | 5/34 = **15% Parcial** | 3/34 = **9% No Cumple**
+**Porcentaje de cumplimiento:** 31/34 = **91% Cumple** | 0/34 = **0% Parcial** | 3/34 = **9% No Cumple** *(Pruebas unitarias pendientes para GA10/GA11)*
 
 ---
 
