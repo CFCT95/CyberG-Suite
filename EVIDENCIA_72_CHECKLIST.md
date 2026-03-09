@@ -119,7 +119,7 @@
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
 | Pruebas unitarias por módulo | **No Cumple** | No existen archivos de prueba (`*.test.js`, `*.spec.php`). No hay directorio `/tests`. Las validaciones están implementadas pero sin cobertura de pruebas automatizadas. **Mejora para siguientes guías:** implementar Jest + React Testing Library para componentes React. Ejemplo: prueba para `validateEmail()` en `validation.test.js`. Mínimo 3 pruebas unitarias para los módulos principales. |
-| Resultados de pruebas (capturas/logs) y cobertura | **No Cumple** | Sin pruebas no hay resultados. Sólo existe validación manual implícita por el flujo de la aplicación. **Mejora para siguientes guías:** ejecutar `npm test -- --coverage` tras implementar Jest y adjuntar captura del reporte de cobertura. Ruta esperada: `./evidencias_72/resultados_pruebas.png` |
+| Resultados de pruebas (capturas/logs) y cobertura | **No Cumple** | Sin pruebas no hay resultados. Sólo existe validación manual implícita por el flujo de la aplicación. **Mejora para siguientes guías:** ejecutar `npm test -- --coverage` tras implementar Jest y adjuntar captura del reporte de cobertura. |
 
 ---
 
