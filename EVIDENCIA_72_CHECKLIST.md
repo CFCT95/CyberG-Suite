@@ -164,44 +164,6 @@
 
 ---
 
-## Evidencias por URL de GitHub
-
-| # | Ítem checklist | URL de evidencia en GitHub | Requiere captura |
-|---|---|---|---|
-| 1.1 | Requerimientos funcionales RF-01 a RF-10 | [REQUERIMIENTOS.md – Sección 2](https://github.com/CFCT95/CyberG-Suite/blob/main/REQUERIMIENTOS.md#L29-L43) | No |
-| 1.1 | Historial de versiones del documento | [REQUERIMIENTOS.md – Historial](https://github.com/CFCT95/CyberG-Suite/blob/main/REQUERIMIENTOS.md#L14-L20) | No |
-| 1.2 | Historias de usuario con Gherkin | [HISTORIAS_USUARIO.md](https://github.com/CFCT95/CyberG-Suite/blob/main/HISTORIAS_USUARIO.md) | No |
-| 1.3 | Alcance del módulo / componentes implementados | [COMPONENTES_IMPLEMENTADOS.md](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/COMPONENTES_IMPLEMENTADOS.md) | No |
-| 2.1 / 2.2 | Trazabilidad HU ↔ componentes | [HISTORIAS_USUARIO.md – Trazabilidad](https://github.com/CFCT95/CyberG-Suite/blob/main/HISTORIAS_USUARIO.md) | No |
-| 3.4 | Capas de arquitectura – servicio de integración | [api.js – config + interceptors (L1–47)](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/services/api.js#L1-L47) | No |
-| 4.1 | Mapa de navegación / rutas React | [App.jsx completo](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/App.jsx) | No |
-| 4.2 | Rutas/endpoints asociados a casos de uso | [api.js – servicios (L52–152)](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/services/api.js#L52-L152) | No |
-| 5.1 | Módulos codificados – estructura general | [Raíz del repositorio](https://github.com/CFCT95/CyberG-Suite) | No |
-| 5.2 | Componentes reutilizables separados | [Carpeta components/ui/](https://github.com/CFCT95/CyberG-Suite/tree/main/react-frontend/src/components/ui) | No |
-| 5.3 | Nomenclatura de carpetas | [Carpeta src/](https://github.com/CFCT95/CyberG-Suite/tree/main/react-frontend/src) | No |
-| 5.4 | Patrón Context API (Provider/Observer) | [AuthContext.jsx – useMemo (L146–162)](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/context/AuthContext.jsx#L146-L162) | No |
-| 5.5 | Buenas prácticas – validaciones | [validation.js (L1–78)](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/utils/validation.js) | No |
-| 5.6 | Integración Axios con backend | [api.js – interceptors (L8–47)](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/services/api.js#L8-L47) | No |
-| 6.1 | Commits descriptivos | [Historial de commits](https://github.com/CFCT95/CyberG-Suite/commits/main) | No |
-| 6.2 | Ramas / flujo de trabajo | [Ramas del repositorio](https://github.com/CFCT95/CyberG-Suite/branches) | No |
-| 6.3 | README con instrucciones | [README.md – Instalación](https://github.com/CFCT95/CyberG-Suite/blob/main/README.md) | No |
-| 7.1 / 7.3 | Dependencias frontend (package.json) | [package.json](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/package.json) | No |
-| 7.2 | Framework Vite / proxy configuración | [vite.config.js](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/vite.config.js) | No |
-| 8.1 | Seguridad – rutas protegidas | [ProtectedRoute.jsx](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/components/navigation/ProtectedRoute/ProtectedRoute.jsx) | No |
-| 8.2 | .gitignore excluye credenciales | [.gitignore (L1–5)](https://github.com/CFCT95/CyberG-Suite/blob/main/.gitignore) | No |
-| 8.3 | Validación de entradas | [validation.js](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/utils/validation.js) | No |
-| 10.1 | Configuración servidor Vite | [vite.config.js](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/vite.config.js) | No |
-| 10.2 | Script de base de datos | [database_setup.sql](https://github.com/CFCT95/CyberG-Suite/blob/main/database_setup.sql) | No |
-| 10.3 | Instrucciones de ejecución | [README.md](https://github.com/CFCT95/CyberG-Suite/blob/main/README.md) | No |
-| 11.1 | Repositorio público GitHub | [github.com/CFCT95/CyberG-Suite](https://github.com/CFCT95/CyberG-Suite) | No |
-| 3.1–3.3 | Diagramas UML (clases, paquetes, componentes) | *[DIAGRAMAS.md](https://github.com/CFCT95/CyberG-Suite/blob/main/DIAGRAMAS.md)* | **No** |
-| 9.1–9.2 | Pruebas unitarias y resultados | *(No aplica URL – pruebas no implementadas aún)* | **Pendiente** |
-| 11.2 | Build `dist/` generado | *(No aplica URL – ejecutar `npm run build` primero)* | **Sí si se requiere** |
-
----
-
----
-
 *Documento generado: 8 de marzo de 2026*
 *Evidencia: GA8-220501096-AA1-EV01*
 *Proyecto: CyberG Suite – Ficha 3070422*
