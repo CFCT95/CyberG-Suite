@@ -123,6 +123,8 @@ CyberG-Suite/
 
 ## 👨‍💻 Autor
 
+**Cristian Ferney Castaño Torres**  
+Ficha 3070422 – SENA  
 Desarrollado como proyecto académico.
 
 ## 📄 Licencia
