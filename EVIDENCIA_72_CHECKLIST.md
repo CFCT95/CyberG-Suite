@@ -194,7 +194,7 @@
 | 10.2 | Script de base de datos | [database_setup.sql](https://github.com/CFCT95/CyberG-Suite/blob/main/database_setup.sql) | No |
 | 10.3 | Instrucciones de ejecución | [README.md](https://github.com/CFCT95/CyberG-Suite/blob/main/README.md) | No |
 | 11.1 | Repositorio público GitHub | [github.com/CFCT95/CyberG-Suite](https://github.com/CFCT95/CyberG-Suite) | No |
-| 3.1–3.3 | Diagramas UML (clases, paquetes, componentes) | *(No aplica URL – diagramas visuales pendientes)* | **Pendiente** |
+| 3.1–3.3 | Diagramas UML (clases, paquetes, componentes) | *[DIAGRAMAS.md](https://github.com/CFCT95/CyberG-Suite/blob/main/DIAGRAMAS.md)* | **No** |
 | 9.1–9.2 | Pruebas unitarias y resultados | *(No aplica URL – pruebas no implementadas aún)* | **Pendiente** |
 | 11.2 | Build `dist/` generado | *(No aplica URL – ejecutar `npm run build` primero)* | **Sí si se requiere** |
 
