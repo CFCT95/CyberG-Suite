@@ -36,9 +36,9 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Requerimientos del sistema identificados y versionados | **Cumple** | Documento `REQUERIMIENTOS.md` creado con 21 requerimientos (RF, RNF, RI) en tabla ID/Descripción/Prioridad/Versión/Estado. Historial de versiones 1.0 → 1.1 documentado. **Captura manual:** `REQUERIMIENTOS.md` tabla sección 2 (RF-01 a RF-10). Ruta: `./evidencias_72/requerimientos_formales.png` |
-| Criterios de aceptación definidos (por historia/caso de uso) | **Cumple** | Documento `HISTORIAS_USUARIO.md` creado con 6 historias de usuario (HU-01 a HU-06) en formato Gherkin (Given/When/Then). Cada HU incluye múltiples escenarios, prioridad, estado y trazabilidad hacia archivos del código fuente. **Captura manual:** `HISTORIAS_USUARIO.md` sección HU-01 o HU-02. Ruta: `./evidencias_72/historias_usuario_gherkin.png` |
-| Alcance del módulo a codificar está claro | **Cumple** | El módulo cubre: registro de empresas, autenticación, dashboard personalizado, visualización de clientes. Documentado en `README.md` y `react-frontend/COMPONENTES_IMPLEMENTADOS.md`. **Captura manual:** `react-frontend/COMPONENTES_IMPLEMENTADOS.md` completo. Ruta: `./evidencias_72/alcance_modulo.png` |
+| Requerimientos del sistema identificados y versionados | **Cumple** | Documento con 21 requerimientos (RF, RNF, RI) en tabla ID/Descripción/Prioridad/Versión/Estado. Historial 1.0 → 1.1. URL: [REQUERIMIENTOS.md – Sección 2 (RF-01 a RF-10)](https://github.com/CFCT95/CyberG-Suite/blob/main/REQUERIMIENTOS.md#L29-L43) |
+| Criterios de aceptación definidos (por historia/caso de uso) | **Cumple** | 6 historias de usuario (HU-01 a HU-06) en formato Gherkin (Given/When/Then) con escenarios, prioridad y trazabilidad. URL: [HISTORIAS_USUARIO.md](https://github.com/CFCT95/CyberG-Suite/blob/main/HISTORIAS_USUARIO.md) |
+| Alcance del módulo a codificar está claro | **Cumple** | Módulo cubre: registro, autenticación, dashboard, clientes. URL: [COMPONENTES_IMPLEMENTADOS.md](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/COMPONENTES_IMPLEMENTADOS.md) |
 
 ---
 
@@ -46,8 +46,8 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Documento de casos de uso o historias de usuario actualizado | **Cumple** | `HISTORIAS_USUARIO.md` creado con 6 HU completas: registro, login, dashboard, clientes, logout y recuperación de contraseña. Cada una con rol, objetivo, escenarios Gherkin y trazabilidad. **Captura manual:** `HISTORIAS_USUARIO.md` tabla de trazabilidad al final del documento. Ruta: `./evidencias_72/trazabilidad_hu.png` |
-| Trazabilidad: historia/caso ↔ módulo ↔ clases/componentes | **Cumple** | `HISTORIAS_USUARIO.md` incluye tabla de trazabilidad resumen (HU ↔ Componente React ↔ Servicio ↔ Backend PHP ↔ Validaciones) y sección "Trazabilidad de código" en cada HU con archivos y números de línea. **Captura manual:** `HISTORIAS_USUARIO.md` sección "Tabla de Trazabilidad Resumen". Ruta: `./evidencias_72/trazabilidad_hu.png` |
+| Documento de casos de uso o historias de usuario actualizado | **Cumple** | 6 HU completas con escenarios Gherkin y trazabilidad hacia archivos del código fuente. URL: [HISTORIAS_USUARIO.md](https://github.com/CFCT95/CyberG-Suite/blob/main/HISTORIAS_USUARIO.md) |
+| Trazabilidad: historia/caso ↔ módulo ↔ clases/componentes | **Cumple** | Tabla de trazabilidad resumen (HU ↔ Componente React ↔ Servicio ↔ Backend PHP ↔ Validaciones) con archivos y líneas. URL: [HISTORIAS_USUARIO.md – Trazabilidad](https://github.com/CFCT95/CyberG-Suite/blob/main/HISTORIAS_USUARIO.md) |
 
 ---
 
@@ -58,7 +58,7 @@
 | Diagrama de clases actualizado | **Cumple** | Diagrama Mermaid con entidad `CLIENTE` y clases PHP con atributos, métodos y relaciones. URL: [DIAGRAMAS.md – Sección 1](https://github.com/CFCT95/CyberG-Suite/blob/main/DIAGRAMAS.md#1-diagrama-de-clases) |
 | Diagrama de paquetes actualizado | **Cumple** | Diagrama Mermaid con capas Backend PHP, Base de Datos, Frontend (context/services/utils/pages/components). URL: [DIAGRAMAS.md – Sección 2](https://github.com/CFCT95/CyberG-Suite/blob/main/DIAGRAMAS.md#2-diagrama-de-paquetes) |
 | Diagrama de componentes actualizado | **Cumple** | Diagrama Mermaid flujo `main.jsx` → `App.jsx` → `AuthContext` → rutas → páginas → widgets → `api.js` → Backend PHP. URL: [DIAGRAMAS.md – Sección 3](https://github.com/CFCT95/CyberG-Suite/blob/main/DIAGRAMAS.md#3-diagrama-de-componentes) |
-| Capas identificadas y ubicación de componentes | **Cumple** | Capas claramente separadas: Presentación (`react-frontend/src/`), Lógica de Negocio (`login.php`, `registro.php`, `dashboard.php`), Acceso a Datos (`db.php`, `ver_registros.php`), Base de Datos (MySQL/`database_setup.sql`). **Captura manual:** `react-frontend/src/services/api.js` líneas 1–50 (capa de integración). Ruta: `./evidencias_72/capas_arquitectura.png` |
+| Capas identificadas y ubicación de componentes | **Cumple** | Presentación (react-frontend/src/), Negocio (login.php, registro.php, dashboard.php), Datos (db.php), BD (MySQL). URL: [DIAGRAMAS.md – Sección 4](https://github.com/CFCT95/CyberG-Suite/blob/main/DIAGRAMAS.md#4-capas-de-arquitectura) |
 
 ---
 
@@ -66,8 +66,8 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Mapa de navegación (pantallas/rutas) actualizado | **Cumple** | Rutas definidas en `App.jsx`: `/login` → `LoginForm`, `/registro` → `RegisterForm`, `/dashboard` → `Dashboard` (protegida), `/clientes` → `Clientes` (protegida), `/` → redirect a `/dashboard`. `ProtectedRoute` controla acceso. **Captura manual:** `react-frontend/src/App.jsx` completo. Ruta: `./evidencias_72/mapa_navegacion.png` |
-| Rutas/endpoints asociados a historias o casos de uso | **Cumple** | Cada ruta corresponde a un caso de uso: `/login` (CU: Autenticarse), `/registro` (CU: Registrar empresa), `/dashboard` (CU: Ver dashboard), `/clientes` (CU: Ver registros). Endpoints backend: `login.php`, `registro.php`, `dashboard.php`, `ver_registros.php`, `logout.php`. **Captura manual:** `react-frontend/src/services/api.js` líneas 52–152. Ruta: `./evidencias_72/rutas_endpoints.png` |
+| Mapa de navegación (pantallas/rutas) actualizado | **Cumple** | Rutas: `/login`, `/registro`, `/dashboard` (protegida), `/clientes` (protegida), `/` → redirect. `ProtectedRoute` controla acceso. URL: [App.jsx](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/App.jsx) |
+| Rutas/endpoints asociados a historias o casos de uso | **Cumple** | `/login` → login.php, `/registro` → registro.php, `/dashboard` → dashboard.php, `/clientes` → ver_registros.php. URL: [api.js – servicios](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/services/api.js#L52-L152) |
 
 ---
 
@@ -75,12 +75,12 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Cada módulo codificado en el lenguaje/stack seleccionado | **Cumple** | Frontend: 20+ componentes React JSX. Backend: 6 archivos PHP (`login.php`, `registro.php`, `dashboard.php`, `logout.php`, `recuperar.php`, `ver_registros.php`). BD: `database_setup.sql` + auto-setup en `db.php`. Java módulo adicional en `Java-Modulo-Clientes/`. **Captura manual:** explorador de archivos de la raíz del proyecto. Ruta: `./evidencias_72/modulos_codificados.png` |
-| Componentes reutilizables identificados y separados | **Cumple** | 5 componentes UI reutilizables: `Button`, `InputField`, `LoadingSpinner`, `Alert`, `Card`. 3 componentes dashboard: `UserInfoCard`, `StatsCard`, `QuickActionsPanel`. 1 componente `EmptyState`. Cada uno en su propio directorio con `.jsx`, `.css` e `index.js`. **Captura manual:** carpeta `react-frontend/src/components/ui/` en el explorador. Ruta: `./evidencias_72/componentes_reutilizables.png` |
-| Nomenclatura de paquetes/carpetas clara y consistente | **Cumple** | React: PascalCase para componentes (`LoginForm`, `ProtectedRoute`), camelCase para utilidades (`validation.js`, `api.js`). PHP: snake_case para archivos (`ver_registros.php`, `database_setup.sql`). Carpetas temáticas: `ui/`, `auth/`, `navigation/`, `layout/`, `dashboard/`, `data/`. **Captura manual:** árbol de directorios `react-frontend/src/`. Ruta: `./evidencias_72/nomenclatura_carpetas.png` |
-| Patrones de diseño aplicados | **Cumple** | Context API (patrón Provider/Observer) en `AuthContext.jsx`. Repository pattern en `ClienteRepository.java` y simulado en `api.js`. Component pattern con composición en `Layout.jsx`. `ProtectedRoute` como patrón Guard/HOC. `useMemo`/`useCallback` para optimización. **Captura manual:** `react-frontend/src/context/AuthContext.jsx` líneas 146–162. Ruta: `./evidencias_72/patron_context.png` |
-| Buenas prácticas: legibilidad, SOLID, manejo de errores, validaciones | **Cumple** | PHPDoc en todos los archivos PHP, JSDoc en todos los archivos JS/JSX. Prepared statements MySQL (previene SQL injection). `password_hash()` para contraseñas. Try/catch en todas las funciones async. Validaciones client-side en `validation.js` y server-side en PHP. **Captura manual:** `react-frontend/src/utils/validation.js` completo. Ruta: `./evidencias_72/buenas_practicas.png` |
-| Integración entre módulos verificada | **Cumple** | Axios configurado con `baseURL: 'http://localhost/CyberG-Suite'`, `withCredentials: true`. Interceptors para token y errores 401. FormData para compatibilidad con PHP. Proxy Vite en `vite.config.js`. **Captura manual:** `react-frontend/src/services/api.js` líneas 8–47. Ruta: `./evidencias_72/integracion_axios.png` |
+| Cada módulo codificado en el lenguaje/stack seleccionado | **Cumple** | 20+ componentes React JSX, 6 archivos PHP, database_setup.sql, módulo Java adicional. URL: [Raíz del repositorio](https://github.com/CFCT95/CyberG-Suite) |
+| Componentes reutilizables identificados y separados | **Cumple** | Button, InputField, LoadingSpinner, Alert, Card, UserInfoCard, StatsCard, QuickActionsPanel, EmptyState – cada uno con .jsx/.css/index.js. URL: [components/ui/](https://github.com/CFCT95/CyberG-Suite/tree/main/react-frontend/src/components/ui) |
+| Nomenclatura de paquetes/carpetas clara y consistente | **Cumple** | PascalCase componentes, camelCase utilidades, snake_case PHP, carpetas temáticas ui/auth/navigation/layout/dashboard/data. URL: [src/components/](https://github.com/CFCT95/CyberG-Suite/tree/main/react-frontend/src/components) |
+| Patrones de diseño aplicados | **Cumple** | Context API (Provider/Observer), Repository pattern, Component pattern (composición), Guard/HOC (ProtectedRoute), useMemo/useCallback. URL: [AuthContext.jsx L146-162](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/context/AuthContext.jsx#L146-L162) |
+| Buenas prácticas: legibilidad, SOLID, manejo de errores, validaciones | **Cumple** | PHPDoc/JSDoc, prepared statements, password_hash(), try/catch async, validaciones client y server side. URL: [validation.js](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/utils/validation.js) |
+| Integración entre módulos verificada | **Cumple** | Axios con baseURL, withCredentials, interceptors 401, FormData para PHP, proxy Vite. URL: [api.js – config L8-47](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/services/api.js#L8-L47) |
 
 ---
 
@@ -88,9 +88,9 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Repositorio (Git) con commits descriptivos | **Cumple** | 8 commits en `main`: "corregir puerto MySQL", "corregir gitignore", "agregar index.html", "migrar a PHP", "agregar informes técnicos", "agregar informes", "agregar readme", etc. Ramas: `main`, `develop`, `feature/agregar-gitignore`. **Captura manual:** ejecutar `git log --oneline` y capturar output. Ruta: `./evidencias_72/git_log.png` |
-| Rama/flujo de trabajo definido | **Cumple** | Tres ramas activas: `main` (producción), `develop` (desarrollo), `feature/agregar-gitignore` (feature branch). Flujo GitFlow básico implementado. **Captura manual:** ejecutar `git branch -a` y capturar. Ruta: `./evidencias_72/git_branches.png` |
-| README con instrucciones de ejecución y dependencias | **Cumple** | `README.md` raíz con instalación, configuración BD, inicio XAMPP. `react-frontend/README.md` con `npm install`, `npm run dev`, variables de entorno. `react-frontend/INSTALACION.md` con pasos detallados. **Captura manual:** `README.md` sección "Instalación" líneas 28–60. Ruta: `./evidencias_72/readme_instalacion.png` |
+| Repositorio (Git) con commits descriptivos | **Cumple** | Commits descriptivos en rama main. URL: [Historial de commits](https://github.com/CFCT95/CyberG-Suite/commits/main) |
+| Rama/flujo de trabajo definido | **Cumple** | Ramas: main (producción), develop (desarrollo), feature/agregar-gitignore. Flujo GitFlow básico. URL: [Ramas del repositorio](https://github.com/CFCT95/CyberG-Suite/branches) |
+| README con instrucciones de ejecución y dependencias | **Cumple** | README.md raíz + react-frontend/README.md + INSTALACION.md con comandos, puertos y variables. URL: [README.md](https://github.com/CFCT95/CyberG-Suite/blob/main/README.md) |
 
 ---
 
@@ -98,9 +98,9 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Listado de librerías por capa y propósito | **Cumple** | **Frontend:** React 18.2 (UI), React Router DOM 6.20 (routing), Axios 1.6 (HTTP), Vite 5.0 (build). **Backend:** PHP nativo (lógica), MySQLi (BD). **BD:** MySQL 5.7. **Java:** MySQL Connector 8.0.33 (lib/). **Captura manual:** `react-frontend/package.json` completo. Ruta: `./evidencias_72/dependencias_package.png` |
-| Framework(s) por capa | **Cumple** | Presentación: React + Vite. Negocio: PHP 7.4+ nativo. Datos: MySQLi. Módulo adicional: Java puro (sin framework). Cada capa tecnológicamente separada. **Captura manual:** `react-frontend/vite.config.js` completo. Ruta: `./evidencias_72/frameworks_vite.png` |
-| Gestión de dependencias | **Cumple** | `react-frontend/package.json` con versiones fijas (`^18.2.0`, `^6.20.0`, `^1.6.2`). `Java-Modulo-Clientes/lib/mysql-connector-java-8.0.33.jar` incluido. `node_modules/` excluido del repo via `.gitignore`. **Captura manual:** `react-frontend/package.json` completo. Ruta: `./evidencias_72/gestion_dependencias.png` |
+| Listado de librerías por capa y propósito | **Cumple** | Frontend: React 18.2, React Router 6.20, Axios 1.6, Vite 5.0. Backend: PHP nativo + MySQLi. Java: MySQL Connector 8.0.33. URL: [package.json](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/package.json) |
+| Framework(s) por capa | **Cumple** | Presentación: React + Vite. Negocio: PHP 7.4 nativo. Datos: MySQLi. Módulo adicional: Java puro. URL: [vite.config.js](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/vite.config.js) |
+| Gestión de dependencias | **Cumple** | package.json con versiones fijas. JAR MySQL Connector incluido en lib/. node_modules excluido via .gitignore. URL: [package.json](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/package.json) |
 
 ---
 
@@ -108,9 +108,9 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Mecanismos de seguridad implementados (auth, roles, permisos) | **Cumple** | Autenticación: sesiones PHP + localStorage React. Rutas protegidas con `ProtectedRoute`. Interceptor 401 en Axios redirige a `/login`. `password_hash(PASSWORD_DEFAULT)` para contraseñas. **Captura manual:** `react-frontend/src/components/navigation/ProtectedRoute/ProtectedRoute.jsx` completo. Ruta: `./evidencias_72/seguridad_protected_route.png` |
+| Mecanismos de seguridad implementados (auth, roles, permisos) | **Cumple** | Sesiones PHP + localStorage React, ProtectedRoute, interceptor 401, password_hash(). URL: [ProtectedRoute.jsx](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/components/navigation/ProtectedRoute/ProtectedRoute.jsx) |
 | Buenas prácticas: variables de entorno, no credenciales en repo | **Cumple** | `db.php` actualizado: usa `getenv()` para `DB_HOST`, `DB_PORT`, `DB_USER`, `DB_PASS`, `DB_NAME` con fallback a valores XAMPP locales. URL: [db.php](https://github.com/CFCT95/CyberG-Suite/blob/main/db.php#L8-L12) |
-| Validación de entradas y controles básicos | **Cumple** | Client-side: `validateEmail`, `validatePassword`, `validatePhone`, `validateRequired`, `validatePasswordMatch` en `validation.js`. Server-side: prepared statements MySQLi en `login.php`, `registro.php`. Sanitización con `htmlspecialchars()`. **Captura manual:** `react-frontend/src/utils/validation.js` líneas 1–60. Ruta: `./evidencias_72/validacion_entradas.png` |
+| Validación de entradas y controles básicos | **Cumple** | validateEmail, validatePassword, validatePhone, validateRequired, validatePasswordMatch client-side. Prepared statements + htmlspecialchars() server-side. URL: [validation.js](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/src/utils/validation.js) |
 
 ---
 
@@ -127,9 +127,9 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Configuración de servidor (local/dev/test) documentada | **Cumple** | `README.md` documenta XAMPP con Apache y MySQL. Puerto 3306, servidor 127.0.0.1. Vite dev server en puerto 3000 con proxy a `http://localhost/CyberG-Suite`. **Captura manual:** `react-frontend/vite.config.js` completo. Ruta: `./evidencias_72/config_servidor.png` |
-| Modelo/Script de BD y configuración de conexión documentados | **Cumple** | `database_setup.sql` contiene el DDL completo de la tabla `CLIENTE`. `db.php` auto-crea la BD y la tabla si no existen. `README.md` documenta todos los campos de la tabla. **Captura manual:** `database_setup.sql` completo. Ruta: `./evidencias_72/script_bd.png` |
-| Instrucciones para levantar el proyecto | **Cumple** | Instrucciones completas en `README.md` (5 pasos claros), `react-frontend/INSTALACION.md` y `react-frontend/LEEME_PRIMERO.txt`. Incluye comandos, puertos y configuración. **Captura manual:** `README.md` sección "Instalación" completa. Ruta: `./evidencias_72/instrucciones_ejecucion.png` |
+| Configuración de servidor (local/dev/test) documentada | **Cumple** | XAMPP Apache + MySQL puerto 3306, Vite dev server puerto 3000 con proxy. URL: [vite.config.js](https://github.com/CFCT95/CyberG-Suite/blob/main/react-frontend/vite.config.js) |
+| Modelo/Script de BD y configuración de conexión documentados | **Cumple** | DDL completo tabla CLIENTE, db.php auto-crea BD/tabla, conexión con getenv(). URL: [database_setup.sql](https://github.com/CFCT95/CyberG-Suite/blob/main/database_setup.sql) |
+| Instrucciones para levantar el proyecto | **Cumple** | 5 pasos claros con comandos, puertos y configuración en README.md. URL: [README.md – Instalación](https://github.com/CFCT95/CyberG-Suite/blob/main/README.md) |
 
 ---
 
@@ -137,8 +137,8 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| URLs: repositorio, demo, API docs, tablero | **Cumple** | Repositorio: https://github.com/CFCT95/CyberG-Suite.git (público). Demo local: `http://localhost/CyberG-Suite/`. API: `http://localhost/CyberG-Suite/login.php`, `/registro.php`, etc. Documentado en `README.md` línea 134. **Captura manual:** página principal de GitHub del repo. Ruta: `./evidencias_72/repositorio_github.png` |
-| Archivos compilados/build (si aplica) | **Cumple** | `npm run build` ejecutado. Genera `react-frontend/dist/` con `index.html` (0.49 kB), `assets/index.css` (14.1 kB), `assets/index.js` (222 kB). 132 módulos transformados. URL: [react-frontend/dist/](https://github.com/CFCT95/CyberG-Suite/tree/main/react-frontend/dist) |
+| URLs: repositorio, demo, API docs, tablero | **Cumple** | Repositorio público GitHub, demo local XAMPP, endpoints documentados. URL: [github.com/CFCT95/CyberG-Suite](https://github.com/CFCT95/CyberG-Suite) |
+| Archivos compilados/build (si aplica) | **Cumple** | npm run build ejecutado. dist/ generado con index.html (0.49 kB), assets/index.css (14.1 kB), assets/index.js (222 kB). URL: [react-frontend/dist/](https://github.com/CFCT95/CyberG-Suite/tree/main/react-frontend/dist) |
 | PDF con checklist diligenciada + observaciones + enlaces | **Pendiente** | Este documento (`EVIDENCIA_72_CHECKLIST.md`) es la base. **Acción requerida:** convertir este archivo a PDF (usar VS Code → "Open Preview" → "Print to PDF", o Markdown to PDF extension). Guardar como `EVIDENCIA_72_GA08_3070422.pdf`. |
 
 ---
