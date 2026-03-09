@@ -1,0 +1,28 @@
+/**
+ * Estilos para el componente UserInfoCard
+ */
+
+.user-info-card {
+  min-height: 200px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  font-weight: bold;
+  color: var(--color-primary);
+}
+
+.info-value {
+  color: var(--text-secondary);
+}
+
