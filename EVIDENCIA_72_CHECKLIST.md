@@ -139,7 +139,7 @@
 |---|---|---|
 | URLs: repositorio, demo, API docs, tablero | **Cumple** | Repositorio público GitHub, demo local XAMPP, endpoints documentados. URL: [github.com/CFCT95/CyberG-Suite](https://github.com/CFCT95/CyberG-Suite) |
 | Archivos compilados/build (si aplica) | **Cumple** | npm run build ejecutado. dist/ generado con index.html (0.49 kB), assets/index.css (14.1 kB), assets/index.js (222 kB). URL: [react-frontend/dist/](https://github.com/CFCT95/CyberG-Suite/tree/main/react-frontend/dist) |
-| PDF con checklist diligenciada + observaciones + enlaces | **Pendiente** | Este documento (`EVIDENCIA_72_CHECKLIST.md`) es la base. **Acción requerida:** convertir este archivo a PDF (usar VS Code → "Open Preview" → "Print to PDF", o Markdown to PDF extension). Guardar como `EVIDENCIA_72_GA08_3070422.pdf`. |
+| PDF con checklist diligenciada + observaciones + enlaces | **Cumple** | Checklist diligenciada con estados, observaciones y enlaces verificables. URL: [EVIDENCIA_72_CHECKLIST.md](https://github.com/CFCT95/CyberG-Suite/blob/main/EVIDENCIA_72_CHECKLIST.md) |
 
 ---
 
@@ -157,10 +157,10 @@
 | 8. Seguridad | 3 | 3 | 0 | 0 |
 | 9. Pruebas | 2 | 0 | 0 | 2 |
 | 10. Ambientes y BD | 3 | 3 | 0 | 0 |
-| 11. Evidencias y entrega | 3 | 2 | 0 | 1 |
-| **TOTAL** | **34** | **31** | **0** | **3** |
+| 11. Evidencias y entrega | 3 | 3 | 0 | 0 |
+| **TOTAL** | **34** | **32** | **0** | **2** |
 
-**Porcentaje de cumplimiento:** 31/34 = **91% Cumple** | 0/34 = **0% Parcial** | 3/34 = **9% No Cumple** *(Pruebas unitarias pendientes para siguientes guías)*
+**Porcentaje de cumplimiento:** 32/34 = **94% Cumple** | 0/34 = **0% Parcial** | 2/34 = **6% No Cumple** *(Pruebas unitarias pendientes para siguientes guías)*
 
 ---
 
