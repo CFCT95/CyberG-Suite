@@ -118,8 +118,8 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Pruebas unitarias por módulo | **No Cumple** | No existen archivos de prueba (`*.test.js`, `*.spec.php`). No hay directorio `/tests`. Las validaciones están implementadas pero sin cobertura de pruebas automatizadas. **Mejora para GA10/11:** implementar Jest + React Testing Library para componentes React. Ejemplo: prueba para `validateEmail()` en `validation.test.js`. Mínimo 3 pruebas unitarias para los módulos principales. |
-| Resultados de pruebas (capturas/logs) y cobertura | **No Cumple** | Sin pruebas no hay resultados. Sólo existe validación manual implícita por el flujo de la aplicación. **Mejora para GA10/11:** ejecutar `npm test -- --coverage` tras implementar Jest y adjuntar captura del reporte de cobertura. Ruta esperada: `./evidencias_72/resultados_pruebas.png` |
+| Pruebas unitarias por módulo | **No Cumple** | No existen archivos de prueba (`*.test.js`, `*.spec.php`). No hay directorio `/tests`. Las validaciones están implementadas pero sin cobertura de pruebas automatizadas. **Mejora para siguientes guías:** implementar Jest + React Testing Library para componentes React. Ejemplo: prueba para `validateEmail()` en `validation.test.js`. Mínimo 3 pruebas unitarias para los módulos principales. |
+| Resultados de pruebas (capturas/logs) y cobertura | **No Cumple** | Sin pruebas no hay resultados. Sólo existe validación manual implícita por el flujo de la aplicación. **Mejora para siguientes guías:** ejecutar `npm test -- --coverage` tras implementar Jest y adjuntar captura del reporte de cobertura. Ruta esperada: `./evidencias_72/resultados_pruebas.png` |
 
 ---
 
@@ -160,69 +160,11 @@
 | 11. Evidencias y entrega | 3 | 2 | 0 | 1 |
 | **TOTAL** | **34** | **31** | **0** | **3** |
 
-**Porcentaje de cumplimiento:** 31/34 = **91% Cumple** | 0/34 = **0% Parcial** | 3/34 = **9% No Cumple** *(Pruebas unitarias pendientes para GA10/GA11)*
-
----
-
-## Plan de Mejora – Ítems "No Cumple" (Guías 10 y 11)
-
-### 1. Pruebas Unitarias (ítem 9.1)
-
-**Observación técnica:** El proyecto carece completamente de pruebas automatizadas. Ningún componente React ni función utilitaria tiene cobertura de test. Esto impide verificar regresiones y garantizar el comportamiento esperado de las validaciones y servicios.
-
-**Acción para GA10/GA11:**
-```bash
-# Instalar Jest y React Testing Library
-cd react-frontend
-npm install --save-dev jest @testing-library/react @testing-library/jest-dom vitest
-```
-Crear al menos:
-- `src/utils/validation.test.js` → probar `validateEmail`, `validatePassword`, `validatePasswordMatch`
-- `src/components/ui/Button/Button.test.jsx` → probar render, click, estado disabled
-- `src/components/auth/LoginForm/LoginForm.test.jsx` → probar validación de campos
-
-### 2. Resultados de Pruebas (ítem 9.2)
-
-**Observación técnica:** Sin evidencia de pruebas ejecutadas no es posible demostrar la calidad funcional del módulo. La Lista de Chequeo del SENA requiere evidencia verificable (capturas o logs de ejecución).
-
-**Acción para GA10/GA11:**
-Tras implementar las pruebas unitarias, ejecutar:
-```bash
-npm run test -- --coverage
-```
-Capturar pantalla del reporte en terminal y del reporte HTML de cobertura. Adjuntar como `./evidencias_72/resultados_pruebas.png`.
-
-### 3. Diagramas UML como imágenes (ítems 3.1, 3.2, 3.3) – "Parcial"
-
-**Observación técnica:** Los diagramas están descritos en texto y código, pero la evidencia GA08 requiere artefactos visuales. Entregar solo código sin diagramas puede resultar en descuento de puntos.
-
-**Acción para GA10/GA11:**
-- Crear diagrama de clases en [draw.io](https://draw.io) o PlantUML con las clases `Cliente`, `ClienteRepository`, `ClienteService` del informe técnico.
-- Exportar como `.png` y colocar en `evidencias_72/diagrama_clases.png`.
-- Crear diagrama de componentes con React components y sus dependencias.
-
-### 4. Variables de entorno para BD (ítem 8.2) – "Parcial"
-
-**Observación técnica:** Credenciales hardcoded en `db.php` es una vulnerabilidad de seguridad. En producción esto representaría riesgo real. Para la evaluación académica, demostrar conocimiento de la buena práctica.
-
-**Acción para GA10/GA11:**
-Crear `config.php` con:
-```php
-$dbConfig = [
-    'host' => getenv('DB_HOST') ?: '127.0.0.1',
-    'port' => getenv('DB_PORT') ?: '3306',
-    'user' => getenv('DB_USER') ?: 'root',
-    'pass' => getenv('DB_PASS') ?: '',
-    'name' => getenv('DB_NAME') ?: 'improve',
-];
-```
-Y agregar `.env.example` al repositorio como referencia.
+**Porcentaje de cumplimiento:** 31/34 = **91% Cumple** | 0/34 = **0% Parcial** | 3/34 = **9% No Cumple** *(Pruebas unitarias pendientes para siguientes guías)*
 
 ---
 
 ## Evidencias por URL de GitHub
-
-> **Nota:** Para ítems de código fuente, el instructor puede verificar directamente en el repositorio público sin necesidad de captura de pantalla. Los links de GitHub son evidencia válida y verificable. Para los ítems marcados con **"Captura requerida"**, no existe URL directa equivalente.
 
 | # | Ítem checklist | URL de evidencia en GitHub | Requiere captura |
 |---|---|---|---|
@@ -252,19 +194,11 @@ Y agregar `.env.example` al repositorio como referencia.
 | 10.2 | Script de base de datos | [database_setup.sql](https://github.com/CFCT95/CyberG-Suite/blob/main/database_setup.sql) | No |
 | 10.3 | Instrucciones de ejecución | [README.md](https://github.com/CFCT95/CyberG-Suite/blob/main/README.md) | No |
 | 11.1 | Repositorio público GitHub | [github.com/CFCT95/CyberG-Suite](https://github.com/CFCT95/CyberG-Suite) | No |
-| 3.1–3.3 | Diagramas UML (clases, paquetes, componentes) | *(No aplica URL – diagramas visuales pendientes)* | **Sí – GA10/GA11** |
-| 9.1–9.2 | Pruebas unitarias y resultados | *(No aplica URL – pruebas no implementadas aún)* | **Sí – GA10/GA11** |
+| 3.1–3.3 | Diagramas UML (clases, paquetes, componentes) | *(No aplica URL – diagramas visuales pendientes)* | **Pendiente** |
+| 9.1–9.2 | Pruebas unitarias y resultados | *(No aplica URL – pruebas no implementadas aún)* | **Pendiente** |
 | 11.2 | Build `dist/` generado | *(No aplica URL – ejecutar `npm run build` primero)* | **Sí si se requiere** |
 
 ---
-
-## Nota sobre Demo y Plataforma SENA
-
-Para evidencia de publicación o estado administrativo en la plataforma SENA/Cyberga:
-1. Ingresar a [https://cyberga.sena.edu.co](https://cyberga.sena.edu.co) o la plataforma asignada.
-2. Navegar al proyecto de la ficha 3070422.
-3. Capturar pantalla de la ficha técnica del proyecto y guardar como `evidencias_72/estado_cyberga.png`.
-4. Capturar pantalla de la entrega enviada (si aplica) como `evidencias_72/entrega_plataforma.png`.
 
 ---
 
