@@ -79,7 +79,7 @@
 | Incluye portada con datos. | **Cumple** | Incluída en informe general. |
 | Incluye introducción (contexto y objetivo). | **Cumple** | Introducción desarrollada en base a las reglas del taller 80. |
 | Incluye conclusiones. | **Cumple** | Capítulo 7 de conclusiones implementado en el Informe. |
-| Cumple formato de entrega: PDF. | **Cumple** | El `.md` final está estructurado e integra de antemano las capturas técnicas, listo para que lo exportes a PDF. |
+| Cumple formato de entrega: PDF. | **Cumple** | Se entrega el reporte final exportado en formato PDF. |
 | Ortografía y redacción técnica adecuada. | **Cumple** | Validado según estructura normalizada SENA (Lenguaje IT estandarizado). |
 
 ---
