@@ -55,8 +55,8 @@
 
 | Ítem | Estado | Evidencia / Observaciones |
 |---|---|---|
-| Ejecuta pruebas básicas con la herramienta instalada. | **Cumple** | Prueba estructurada ejectada; valida si `index.html` expone el nombre *"CyberG Suite"*. El test retornó código 0 (Éxito). |
-| Anexa capturas de pantalla del proceso. | **Cumple** | Incluidos el resgistro completo de terminal y la captura de interfaz `captura_inicio.png` local validada. |
+| Ejecuta pruebas básicas con la herramienta instalada. | **Cumple** | Prueba estructurada ejecutada; valida si `index.html` expone el nombre *"CyberG Suite"*. El test retornó código 0 (Éxito). |
+| Anexa capturas de pantalla del proceso. | **Cumple** | Incluidos el registro completo de terminal y la captura de interfaz `captura_inicio.png` local validada. |
 | Registra resultados obtenidos y su interpretación. | **Cumple** | Se registró la lectura exitosa sin generar _exceptions_. Interpretación: El FrontEnd estático cumple sus aserciones clave. URL: [INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md) |
 | Incluye evidencia de correcciones realizadas. | **Cumple** | No hubo fallos base sobre la etiqueta del titular durante la primera ronda, no se requiriere parches adicionales de re-factorización por ahora. |
 
@@ -79,7 +79,7 @@
 | Incluye portada con datos. | **Cumple** | Incluída en informe general. |
 | Incluye introducción (contexto y objetivo). | **Cumple** | Introducción desarrollada en base a las reglas del taller 80. |
 | Incluye conclusiones. | **Cumple** | Capítulo 7 de conclusiones implementado en el Informe. |
-| Cumple formato de entrega: PDF. | **Cumple** | El `.md` final está estructurado para que lo exportes a PDF tras incluir tus dos capturas técnicas. |
+| Cumple formato de entrega: PDF. | **Cumple** | El `.md` final está estructurado e integra de antemano las capturas técnicas, listo para que lo exportes a PDF. |
 | Ortografía y redacción técnica adecuada. | **Cumple** | Validado según estructura normalizada SENA (Lenguaje IT estandarizado). |
 
 ---
