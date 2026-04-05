@@ -3,8 +3,8 @@
 **Evidencia:** GA9-220501096-AA1-EV01 — Pruebas de Software
 **Programa de Formación:** Análisis y Desarrollo de Software (ADSO)
 **Proyecto:** CyberG Suite
-**Aprendiz:** [Nombre del Aprendiz]
-**Ficha:** [Número de Ficha]
+**Aprendiz:** Cristian Ferney Castaño Torres
+**Ficha:** 3070422
 **Fecha:** 5 de Abril de 2026
 
 ---
