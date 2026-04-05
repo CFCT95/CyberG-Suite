@@ -19,3 +19,7 @@ config.local.php
 .idea/
 .vscode/
 *.swp
+# Node
+node_modules/
+react-frontend/node_modules/
+react-frontend/dist/
