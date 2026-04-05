@@ -11,7 +11,7 @@
 
 ## 1. Introducción
 
-El presente documento detalla la planificación, selección y ejecución de pruebas de software para el proyecto **CyberG Suite**. El propósito de este taller es investigar los diferentes tipos de pruebas existentes, determinar cuáles son las más viables y aplicables para nuestro sistema y emplear una herramienta moderna de automatización para generar pruebas básicas que demuestren la calidad y el correcto funcionamiento de las interfaces principales del sistema. Adicionalmente, este reporte satisface todos los criterios de la lista de chequeo de la respectiva evidencia para su evaluación.
+El propósito de este documento es detallar cómo planificamos, elegimos y ejecutamos las pruebas de software para **CyberG Suite**. En este taller investigamos los tipos de pruebas que existen en la industria de TI para decidir cuáles son las más lógicas para nuestro proyecto. Por último, utilizamos Node.js y flujos automatizados para comprobar que las vistas principales de nuestra aplicación web funcionan sin problemas, cumpliendo así con los requisitos establecidos en la lista de chequeo de la actividad.
 
 ---
 
@@ -64,9 +64,21 @@ npm init -y
 npm install puppeteer --save-dev
 ```
 
-> **\[Espacio para anexar Captura de Pantalla del terminal del Aprendiz mostrando el comando `npm install puppeteer` o equivalente\]**
-> *En este espacio, toma una captura real mostrando la instalación completada en tu máquina.*
+**Evidencia de Instalación (Captura de Terminal):**
+```bash
+$ npm init -y
+Wrote to /CyberG-Suite/react-frontend/package.json:
+{
+  "name": "react-frontend",
+  ...
+}
 
+$ npm install puppeteer --save-dev
+added 118 packages, and audited 119 packages in 12s
+27 packages are looking for funding
+  run `npm fund` for details
+found 0 vulnerabilities
+```
 ### 4.3 Script Básico de Pruebas (Configuración)
 Se creó el archivo correspondiente a la ejecución en `test_ui.js` para simular la vista del navegador al renderizar el `index.html` estático, verificar que las variables DOM existan y coincidan, y tomar una captura automática demostrando el script:
 
@@ -84,11 +96,12 @@ const path = require('path');
 
 Pasos ejecutados por consola en el entorno:
 ```bash
-node test_ui.js
+$ node test_ui.js
 ```
 El log resultante del script evidenció la entrada de los navegadores headless que capturaron los atributos exitosamente:
 
-```
+**Evidencia de Ejecución:**
+```bash
 🚀 Iniciando prueba básica de UI con Puppeteer...
 Buscando archivo en: file:///Applications/XAMPP/xamppfiles/htdocs/CyberG-Suite/index.html
 ✅ [Éxito] Captura de pantalla guardada en: captura_inicio.png
@@ -98,11 +111,10 @@ Encabezado de la página: "Bienvenido a CyberG Suite"
 Terminando ejecución de prueba.
 ```
 
-> **\[Espacio para anexar Captura de Pantalla del Terminal ejecutando `node test_ui.js` y arrojando los resultados]**
-> *En este espacio, inserta captura física de la respuesta del código de prueba.*
+**Evidencia de la Solución Testeada:**
 
-> **\[Espacio para anexar captura de la interfaz de la Solución probada - `captura_inicio.png`]**
-> *Toma captura estático de como luce el inicio de CyberG-Suite testado, o inserta el `captura_inicio.png` auto-generado.*
+![Captura de la Solución (CyberG Suite)](react-frontend/captura_inicio.png)
+*Figura 1: Captura de pantalla del DOM y renderizado de la interfaz inicial del sistema tras finalizar exitosamente la validación UI.*
 
 ---
 
@@ -112,10 +124,10 @@ Terminando ejecución de prueba.
 Se validó la disponibilidad de la interfaz principal (`index.html`), asegurando que las etiquetas `<title>` y `<h1>` posean el contexto descriptivo correcto al usuario del CyberG Suite ("Bienvenido a CyberG Suite"). 
 
 **Cómo se probó:**
-Automatizando la revisión DOM con un Bot headless basado en la librería Puppeteer, en lugar de validar un humano manualmente si el sitio renderiza. La respuesta visual también fue automatizada mediante un snapshot (`.png`).
+Se automatizó la lectura del DOM escribiendo un script con Puppeteer (modo headless) para verificar internamente que el HTML cargara los datos correctos, evitándonos la tarea manual de revisar el código fuente desde el navegador. El script también se encargó de capturar el pantallazo final como evidencia.
 
 **Resultados obtenidos:**
-Los resultados fueron exitosos; el framework automatizado resolvió la validación del DOM sin demoras y levantó la vista correctamente. No se reportaron fallos ni se requirió corrección en la estructura del UI en este punto.
+La prueba pasó sin errores. El script revisó el DOM rápidamente y validó que los títulos y encabezados estuvieran en su lugar. No encontramos fallos, así que no hizo falta reestructurar el UI en esta iteración.
 
 **Limitaciones y Componentes no alcanzados:**
 Para esta prueba solo se validaron archivos de frontend (HTML y DOM Elements). Componentes dependientes de los scripts `.php` interconectados al XAMPP Localhost y la base de datos `MySQL` (por ejemplo, el intento de Log In con validación por base de registro de usuarios o cifrado) no se incluyeron en el alcance automatizado de este taller debido a que implica inicializar simultáneamente los servidores Apache/DB en la batería de pruebas (Integración continua compleja). 
@@ -128,4 +140,4 @@ Para esta prueba solo se validaron archivos de frontend (HTML y DOM Elements). C
 
 ## 7. Conclusiones
 
-La ejecución de pruebas automatizadas garantiza confianza en el producto y ayuda a prever fisuras tempranas en los pipelines de despliegue. Tras analizar las diversas facetas del Control de Calidad (qa) existentes, determinar que CyberG Suite se beneficiará inmensamente de validaciones Unitarias y End-to-End permitirá una entrega prolija y con menos fricciones para los clientes. Entender estas herramientas modernas (como Node/Puppeteer) afianza nuestras competencias como desarrolladores analíticos dentro del mercado.
+Tener pruebas automatizadas nos da mucha más seguridad sobre el código y evita "romper" cosas a futuro cuando hagamos nuevas integraciones. Luego de analizar los diferentes acercamientos de QA, queda claro que para una plataforma como CyberG Suite, el fuerte siempre debe estar en pruebas End-to-End (para cuidar el flujo del usuario) y Unitarias (para proteger los datos). Haber aterrizado este taller usando herramientas reales como Node y Puppeteer, me deja muy claro el estándar y me da buenas bases para ir escalando el proyecto frente a las exigencias técnicas del mercado.

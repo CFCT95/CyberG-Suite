@@ -1,0 +1,190 @@
+GA9-220501096-AA1-EV01 – Lista de Chequeo (Taller: Pruebas de Software)
+Evidencia 80. Taller Sobre Codificación de Módulos del Software
+Fecha: 18/03/2026
+
+Instrucciones para el aprendiz: Diligencie la lista de chequeo marcando el estado (Cumple/Parcial/No cumple) y adjunte evidencia verificable (capturas, enlaces, rutas de archivos, nombre de herramienta instalada, etc.). El producto final a cargar en plataforma es un documento en PDF con mínimo 3 hojas de contenido, con portada, introducción y conclusiones, que responda las preguntas orientadoras del taller.
+
+1. Datos del aprendiz y del proyecto
+• Aprendiz/Equipo: ______________________________
+• Ficha: ______________________________
+• Programa: ______________________________
+• Nombre del proyecto: ______________________________
+• Repositorio (URL): ______________________________
+• Tecnología/Stack (Front/Back/BD): ______________________________
+• Herramienta de pruebas seleccionada: ______________________________
+• Sistema operativo (si aplica): ______________________________
+
+
+2. Preguntas orientadoras (contenido del taller)
+Ítem
+Cumple
+Parcial
+No cumple
+Evidencia (captura/URL/ruta)
+Observaciones / Acciones de mejora
+Describe qué es una prueba de software y su propósito en una solución de software.
+☐
+☐
+☐
+
+
+Identifica tipos de pruebas de software (ej.: unitarias, integración, sistema, aceptación, regresión, rendimiento, seguridad, usabilidad, etc.).
+☐
+☐
+☐
+
+
+Explica características y beneficios de cada tipo de prueba mencionado.
+☐
+☐
+☐
+
+
+Justifica qué tipos de pruebas se adaptan mejor al proyecto que está desarrollando.
+☐
+☐
+☐
+
+
+Relaciona las pruebas seleccionadas con módulos/componentes concretos del proyecto (qué se prueba y por qué).
+☐
+☐
+☐
+
+
+
+3. Herramienta de pruebas (instalación y evidencia)
+Ítem
+Cumple
+Parcial
+No cumple
+Evidencia (captura/URL/ruta)
+Observaciones / Acciones de mejora
+Investiga al menos una herramienta de pruebas y explica por qué la eligió.
+☐
+☐
+☐
+
+
+Evidencia de instalación en el computador (captura/registro de instalación).
+☐
+☐
+☐
+
+
+Describe versión de la herramienta y requisitos mínimos.
+☐
+☐
+☐
+
+
+Configura la herramienta para ejecutar pruebas básicas en su solución de software.
+☐
+☐
+☐
+
+
+
+4. Ejecución de pruebas básicas (capturas y resultados)
+Ítem
+Cumple
+Parcial
+No cumple
+Evidencia (captura/URL/ruta)
+Observaciones / Acciones de mejora
+Ejecuta pruebas básicas con la herramienta instalada sobre su solución.
+☐
+☐
+☐
+
+
+Anexa capturas de pantalla del proceso (paso a paso o evidencias clave).
+☐
+☐
+☐
+
+
+Registra resultados obtenidos (éxitos/fallos) y su interpretación.
+☐
+☐
+☐
+
+
+Incluye evidencia de correcciones o ajustes realizados si se presentaron fallos (opcional recomendado).
+☐
+☐
+☐
+
+
+
+5. Resumen de pruebas realizadas
+Ítem
+Cumple
+Parcial
+No cumple
+Evidencia (captura/URL/ruta)
+Observaciones / Acciones de mejora
+Elabora un resumen claro: qué se probó, cómo se probó, resultado y conclusiones técnicas.
+☐
+☐
+☐
+
+
+Indica alcance y limitaciones del taller (qué no se alcanzó a probar y por qué).
+☐
+☐
+☐
+
+
+Propone acciones de mejora o pruebas futuras para el proyecto.
+☐
+☐
+☐
+
+
+
+6. Presentación del documento (normas básicas)
+Ítem
+Cumple
+Parcial
+No cumple
+Evidencia (captura/URL/ruta)
+Observaciones / Acciones de mejora
+Incluye portada con datos (aprendiz, ficha, evidencia, proyecto, fecha).
+☐
+☐
+☐
+
+
+Incluye introducción (contexto del proyecto y objetivo del taller).
+☐
+☐
+☐
+
+
+Incluye conclusiones (aprendizajes y estado de calidad).
+☐
+☐
+☐
+
+
+Cumple formato de entrega: PDF.
+☐
+☐
+☐
+
+
+Extensión mínima: 3 hojas de contenido (sin contar portada si la institución así lo maneja).
+☐
+☐
+☐
+
+
+Ortografía y redacción técnica adecuada; referencias a fuentes consultadas (si aplica).
+☐
+☐
+☐
+
+
+
+Firma / Observación del instructor (opcional): ____________________________________________________________
