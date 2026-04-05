@@ -83,11 +83,29 @@ found 0 vulnerabilities
 Se creó el archivo correspondiente a la ejecución en `test_ui.js` para simular la vista del navegador al renderizar el `index.html` estático, verificar que las variables DOM existan y coincidan, y tomar una captura automática demostrando el script:
 
 ```javascript
-// test_ui.js (Resumen de código)
 const puppeteer = require('puppeteer');
 const path = require('path');
-// [...] (El código evalúa que el H1 sea 'Bienvenido a CyberG Suite' y el título sea 'CyberG Suite')
-// Adicionalmente usa page.screenshot() para adjuntar una imagen programática del producto.
+
+(async () => {
+    const browser = await puppeteer.launch({ headless: "new" });
+    const page = await browser.newPage();
+    
+    // Cargar la vista principal
+    await page.goto(`file://${path.resolve(__dirname, '../index.html')}`);
+    
+    // Capturar evidencia de la UI
+    await page.screenshot({ path: 'captura_inicio.png' });
+    
+    // Validaciones de UI
+    const title = await page.title();
+    const h1Text = await page.$eval('h1', el => el.innerText);
+    
+    if (title === 'CyberG Suite' && h1Text.includes('Bienvenido')) {
+        console.log('✅ [Éxito] Todas las validaciones de UI pasaron correctamente.');
+    }
+    
+    await browser.close();
+})();
 ```
 
 ---
