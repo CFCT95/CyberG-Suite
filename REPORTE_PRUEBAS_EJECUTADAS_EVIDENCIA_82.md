@@ -12,15 +12,6 @@
 
 ---
 
-## 📑 Control de Versiones
-
-| Versión | Fecha | Autor | Detalle del Cambio |
-|---|---|---|---|
-| 1.0 | 05/04/2026 | Cristian Ferney Castaño Torres | Creación del reporte inicial consolidado. |
-| 1.1 | 05/04/2026 | Cristian Ferney Castaño Torres | Mejora de trazabilidad y enlaces de evidencias. |
-
----
-
 ## 🔝 Tabla de Contenidos
 1.  [Introducción](#1-introducción)
 2.  [Trazabilidad de la Fase de Pruebas](#2-trazabilidad-de-la-fase-de-pruebas)
