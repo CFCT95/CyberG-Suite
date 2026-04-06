@@ -4,8 +4,6 @@
 
 > **Documentos relacionados:**
 > - [Casos de Prueba – Evidencia 81](CASOS_PRUEBA_EVIDENCIA_81.md)
-> - [Informe de Pruebas – Evidencia 80](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md)
-> - [Checklist – Evidencia 80](EVIDENCIA_80_CHECKLIST.md)
 > - [Repositorio completo](https://github.com/CFCT95/CyberG-Suite)
 
 ---

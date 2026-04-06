@@ -3,8 +3,6 @@
 
 > **Documentos relacionados:**
 > - [Lista de Chequeo – Evidencia 81](EVIDENCIA_81_CHECKLIST.md)
-> - [Informe de Pruebas – Evidencia 80](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md)
-> - [Checklist – Evidencia 80](EVIDENCIA_80_CHECKLIST.md)
 > - [Script de pruebas Puppeteer](react-frontend/test_ui.js)
 > - [Captura de UI validada](react-frontend/captura_inicio.png)
 > - [Base de datos](database_setup.sql)
@@ -209,7 +207,7 @@
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Captura UI validada: [react-frontend/captura_inicio.png](react-frontend/captura_inicio.png) · Script: [react-frontend/test_ui.js](react-frontend/test_ui.js) · Informe: [INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md) |
+| **Evidencia** | Captura UI validada: [react-frontend/captura_inicio.png](react-frontend/captura_inicio.png) · Script: [react-frontend/test_ui.js](react-frontend/test_ui.js) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
