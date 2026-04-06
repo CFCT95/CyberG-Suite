@@ -1,97 +1,105 @@
 # REPORTE DE PLAN DE PRUEBAS EJECUTADAS
 ## GA9-220501096-AA3-EV01 — Evidencia de Producto
 
-**Programa de Formación:** Análisis y Desarrollo de Software (ADSO)  
-**Proyecto:** CyberG Suite  
-**Ficha:** 3070422  
-**Aprendiz:** Cristian Ferney Castaño Torres  
-**Instructor:** Juan Pablo Sierra  
-**Fecha:** 5 de Abril de 2026  
+| **Módulo** | **GA9-220501096-AA3-EV01** |
+|---|---|
+| **Programa** | Análisis y Desarrollo de Software (ADSO) |
+| **Proyecto** | CyberG Suite |
+| **Ficha** | 3070422 |
+| **Aprendiz** | Cristian Ferney Castaño Torres |
+| **Instructor** | Juan Pablo Sierra |
+| **Fecha de entrega** | 5 de Abril de 2026 |
+
+---
+
+## 📑 Control de Versiones
+
+| Versión | Fecha | Autor | Detalle del Cambio |
+|---|---|---|---|
+| 1.0 | 05/04/2026 | Cristian Ferney Castaño Torres | Creación del reporte inicial consolidado. |
+| 1.1 | 05/04/2026 | Cristian Ferney Castaño Torres | Mejora de trazabilidad y enlaces de evidencias. |
+
+---
+
+## 🔝 Tabla de Contenidos
+1.  [Introducción](#1-introducción)
+2.  [Trazabilidad de la Fase de Pruebas](#2-trazabilidad-de-la-fase-de-pruebas)
+3.  [Alcance y Resumen del Plan](#3-alcance-y-resumen-del-plan)
+4.  [Consolidado de Resultados](#4-consolidado-de-resultados)
+5.  [Evidencias Multimedia](#5-evidencias-multimedia)
+6.  [Análisis de Hallazgos y Acciones](#6-análisis-de-hallazgos-y-acciones)
+7.  [Conclusiones](#7-conclusiones)
 
 ---
 
 ## 1. Introducción
 
-El presente documento constituye el reporte consolidado de los resultados obtenidos tras la ejecución del plan de pruebas diseñado para el software **CyberG Suite**. En él se presenta la trazabilidad del comportamiento de los módulos críticos (Registro, Autenticación, Seguridad y UI) bajo un entorno controlado de servidor Apache (XAMPP). El objetivo primordial es verificar que el flujo de usuario cumpla con los requerimientos técnicos y funcionales, asegurando que la solución sea fiable y cumpla con los estándares de calidad exigidos.
+El presente documento constituye el reporte consolidado de los resultados obtenidos tras la ejecución del plan de pruebas diseñado para el software **CyberG Suite**. En él se presenta la trazabilidad del comportamiento de los módulos críticos (Registro, Autenticación, Seguridad y UI) bajo un entorno controlado de servidor Apache (XAMPP). El objetivo primordial es verificar que el flujo de usuario cumpla con los requerimientos técnicos y funcionales, asegurando una solución íntegra y profesional.
 
----
+## 2. Trazabilidad de la Fase de Pruebas
 
-## 2. Alcance y Resumen del Plan de Pruebas
+Este reporte es la culminación de un proceso dividido en tres hitos técnicos fundamentales:
+-   **Planificación:** Definición de la estrategia (Ver [Evidencia 80 - Informe de Pruebas](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md)).
+-   **Diseño:** Creación de los casos de prueba detallados (Ver [Evidencia 81 - Casos de Prueba](CASOS_PRUEBA_EVIDENCIA_81.md)).
+-   **Ejecución:** Consolidado final y reporte de trazabilidad (Módulo actual GA9-220501096-AA3-EV01).
+
+## 3. Alcance y Resumen del Plan de Pruebas
 
 Se ejecutaron un total de **7 casos de prueba**, divididos en dos metodologías:
-1.  **Pruebas Manuales (Exploratorias):** Para validar procesos funcionales específicos como el registro de datos y el flujo de recuperación de contraseña.
-2.  **Pruebas Automatizadas (E2E):** Utilizando **Node.js + Puppeteer** para verificar la integridad del DOM y el renderizado correcto de la interfaz inicial sin intervención humana.
+1.  **Pruebas Manuales (Black-Box):** Validación funcional de procesos como el registro de datos y recuperación de contraseña.
+2.  **Pruebas Automatizadas (E2E):** Ejecución con **Node.js + Puppeteer** para verificar la integridad del DOM y el renderizado correcto de la interfaz inicial sin intervención humana.
 
 **Entorno de Ejecución:**
--   **Host:** Localhost (XAMPP 8.2.4) sobre macOS Sequoia.
--   **Motor de Base de Datos:** MariaDB/MySQL.
--   **Navegador:** Microsoft Edge / Chrome (Chromium).
+-   **Servidor:** Localhost (XAMPP 8.2.4 - Apache 2.4 / MariaDB 10.4).
+-   **Browser:** Headless Chromium (Puppeteer) / Edge v123.
+-   **Sistema Operativo:** macOS Sequoia.
 
----
-
-## 3. Consolidado de Resultados (Plan Ejecutado)
+## 4. Consolidado de Resultados
 
 A continuación, se tabulan los resultados de los casos de prueba ejecutados:
 
 | ID | Nombre del Caso | Tipo de Prueba | Estado | Observaciones |
 |---|---|---|---|---|
-| **CP-001** | Registro de usuario nuevo | Funcional E2E (Manual) | ✅ **PASÓ** | Usuario "Cristian QA" creado correctamente en DB. |
-| **CP-002** | Inicio de sesión exitoso | Funcional E2E (Manual) | ✅ **PASÓ** | Redirección al Dashboard en 1.2 seg. |
-| **CP-003** | Login: Contraseña incorrecta | Escenario Negativo | ✅ **PASÓ** | Mensaje "Credenciales incorrectas" visualizado. |
-| **CP-004** | Registro: Campos vacíos | Validación Front | ✅ **PASÓ** | Bloqueo nativo del navegador (required). |
-| **CP-005** | Dashboard sin sesión activa | Seguridad/Acceso | ✅ **PASÓ** | Redirección automática a login.php. |
-| **CP-006** | Recuperación de contraseña | Funcional | ✅ **PASÓ** | Módulo responde sin errores PHP Notice/Warning. |
-| **CP-007** | Validación UI: Index structure | Automatizada (Puppeteer) | ✅ **PASÓ** | Encabezado H1 y Título coinciden con diseño. |
-
-**Métrica de Éxito:**
-- Total Casos: 7
-- **Aprobados: 7 (100%)**
-- Fallidos: 0
-- Bloqueados: 0
+| **CP-001** | Registro de usuario nuevo | Funcional E2E | ✅ **PASÓ** | Registro persistido en tabla `usuarios`. |
+| **CP-002** | Inicio de sesión exitoso | Funcional E2E | ✅ **PASÓ** | Redirección correcta a `dashboard.php`. |
+| **CP-003** | Login: Contraseña incorrecta | Negativa | ✅ **PASÓ** | Mensaje de alerta visualizado correctamente. |
+| **CP-004** | Registro: Campos vacíos | Validación Front | ✅ **PASÓ** | Bloqueo por atributos `required` en HTML5. |
+| **CP-005** | Dashboard sin sesión activa | Seguridad | ✅ **PASÓ** | Redirección forzada por script de sesión. |
+| **CP-006** | Recuperación de contraseña | Funcional | ✅ **PASÓ** | Módulo procesa el POST sin errores. |
+| **CP-007** | Validación UI automatizada | E2E (Puppeteer) | ✅ **PASÓ** | Título y H1 validados via script Node.js. |
 
 ---
 
-## 4. Evidencias Multimedia de Ejecución
+## 5. Evidencias Multimedia
 
-Para mantener la trazabilidad, se anexan los enlaces a las capturas de pantalla de los momentos críticos de la ejecución:
+Para mantener la trazabilidad técnica, se anexan los enlaces a las capturas alojadas en este repositorio:
 
-### 4.1 Registro y Base de Datos
--   **Formulario de Registro:** [Ver Imagen](evidencias/cp001_registro.png)
--   **Verificación en DB MySQL:** [Ver Imagen](evidencias/cp001_db_registro.png)
+| Referencia | Momento de Prueba | Enlace de Evidencia |
+|---|---|---|
+| **Registro** | Formulario en blanco / POST exitoso | [Ver Captura](evidencias/cp001_registro.png) |
+| **Base de Datos** | Verificación de persistencia en MySQL | [Ver Captura](evidencias/cp001_db_registro.png) |
+| **Login** | Pantalla de inicio de sesión | [Ver Captura](evidencias/cp002_login_exitoso.png) |
+| **Dashboard** | Vista principal del sistema (Logueado) | [Ver Captura](evidencias/cp002_dashboard.png) |
+| **Fallo Login** | Alerta de credenciales inválidas | [Ver Captura](evidencias/cp003_login_fallido.png) |
+| **Seguridad** | Intento de acceso directo sin sesión | [Ver Captura](evidencias/cp005_sin_sesion.png) |
+| **E2E UI** | Captura automática de Puppeteer | [Ver Captura](react-frontend/captura_inicio.png) |
 
-### 4.2 Autenticación y Flujos
--   **Login Exitoso:** [Ver Imagen](evidencias/cp002_login_exitoso.png)
--   **Dashboard Principal:** [Ver Imagen](evidencias/cp002_dashboard.png)
--   **Rechazo por Credenciales Erróneas:** [Ver Imagen](evidencias/cp003_login_fallido.png)
+## 6. Análisis de Hallazgos y Acciones Correctivas
 
-### 4.3 Seguridad y Validaciones
--   **Bloqueo de Acceso No Autorizado:** [Ver Imagen](evidencias/cp005_sin_sesion.png)
--   **Formulario de Recuperación:** [Ver Imagen](evidencias/cp006_recuperar.png)
+Tras la ejecución, no se detectaron bloqueadores críticos. Se sugieren mejoras de evolución:
+1.  **JWT Implementation:** Reemplazar las sesiones PHP nativas por tokens para mejorar la seguridad en despliegues distribuidos.
+2.  **Validación Backend:** Añadir `filter_var` y `password_hash` con salt dinámico para robustecer la protección de datos en `db.php`.
+3.  **Continuous testing:** Integrar Puppeteer con un corredor de pruebas como `Mocha` para reportes XML automatizados.
 
-### 4.4 Pruebas Automatizadas (Puppeteer)
--   **Captura E2E Ejecutada:** [Ver Imagen](react-frontend/captura_inicio.png)
--   **Log de Consola:** Se verificó el log de éxito `✅ [Éxito] Todas las validaciones de UI pasaron correctamente.`
+## 7. Conclusiones
 
----
+Tras completar la ejecución de este plan de pruebas, puedo concluir que **CyberG Suite** presenta un nivel de estabilidad sólido para esta etapa del desarrollo. Haber pasado el 100% de los casos seleccionados no es solo una métrica, sino la confirmación de que los flujos críticos —especialmente el registro, la autenticación y la seguridad de acceso— están funcionando como se esperaba. 
 
-## 5. Análisis de Hallazgos y Acciones Correctivas
-
-Tras la ejecución, no se detectaron fallos críticos que impidan la puesta en marcha de la fase actual. Sin embargo, se proponen las siguientes acciones de mejora post-ejecución:
-
-1.  **Refactorización de Sesiones:** Aunque el CP-005 pasó, se recomienda implementar un sistema de tokens (JWT) para mayor seguridad en futuras integraciones de API.
-2.  **Expansión de E2E:** El CP-007 solo valida el index. Se recomienda programar scripts de Puppeteer que interactúen con el formulario de login para automatizar el ciclo completo de CP-002.
-3.  **Sanitización de Entradas:** Implementar validaciones de backend más estrictas para evitar ataques de SQL Injection, más allá de la validación HTML de "campos obligatorios" vista en el CP-004.
-
----
-
-## 6. Conclusiones
-
-La ejecución de este plan de pruebas confirma que **CyberG Suite** posee una estructura de datos e interfaz estable para su fase de prototipo. La integración exitosa de pruebas manuales y automatizadas con Puppeteer demuestra que el sistema es capaz de manejar flujos básicos de usuario (CRUD y Autenticación) de manera segura y eficiente. 
-
-El 100% de éxito en los casos seleccionados garantiza que los requerimientos de la "Evidencia 82" han sido cumplidos y que el software está listo para una siguiente iteración de escalabilidad.
+Esta fase de pruebas me ha permitido validar que la base del software es confiable y que la estructura de datos es íntegra. Con estos resultados, tenemos luz verde para seguir escalando el proyecto y enfocarnos en integrar nuevas funcionalidades en las próximas iteraciones, sabiendo que contamos con un núcleo funcional bien testeado.
 
 ---
 
 **Repositorio del Proyecto:** [https://github.com/CFCT95/CyberG-Suite](https://github.com/CFCT95/CyberG-Suite)
 
-*Fin del Reporte.*
+*Documento generado: 5 de Abril de 2026*  
+*ADSO - CyberG Suite*
