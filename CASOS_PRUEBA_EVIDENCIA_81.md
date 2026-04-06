@@ -89,7 +89,7 @@
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Login exitoso: [evidencias/cp002_login_exitoso.png](evidencias/cp002_login_exitoso.png) · Módulo: [login.php](login.php) |
+| **Evidencia** | Login exitoso: [evidencias/cp002_login_exitoso.png](evidencias/cp002_login_exitoso.png) · Dashboard: [evidencias/cp002_dashboard.png](evidencias/cp002_dashboard.png) · Módulo: [login.php](login.php) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
