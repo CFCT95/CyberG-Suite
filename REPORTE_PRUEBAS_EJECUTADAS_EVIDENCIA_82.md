@@ -7,7 +7,7 @@
 | **Proyecto** | CyberG Suite |
 | **Ficha** | 3070422 |
 | **Aprendiz** | Cristian Ferney Castaño Torres |
-| **Instructor** | Juan Pablo Sierra |
+| **Instructor** | Juan Tamayo |
 | **Fecha de entrega** | 5 de Abril de 2026 |
 
 ---
