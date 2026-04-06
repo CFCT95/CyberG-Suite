@@ -2,6 +2,12 @@
 ## GA9-220501096-AA2-EV01 – Casos y Ambiente de Pruebas
 ### Diseña casos y define el ambiente de pruebas de software según proyecto
 
+> **Documentos relacionados:**
+> - [Casos de Prueba – Evidencia 81](CASOS_PRUEBA_EVIDENCIA_81.md)
+> - [Informe de Pruebas – Evidencia 80](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md)
+> - [Checklist – Evidencia 80](EVIDENCIA_80_CHECKLIST.md)
+> - [Repositorio completo](https://github.com/CFCT95/CyberG-Suite)
+
 ---
 
 ## Datos del Proyecto
@@ -13,7 +19,7 @@
 | **Ficha** | 3070422 |
 | **Programa** | Análisis y Desarrollo de Software (ADSO) |
 | **Repositorio (URL)** | https://github.com/CFCT95/CyberG-Suite |
-| **Archivo entregable** | CASOS_PRUEBA_EVIDENCIA_81.md |
+| **Archivo entregable** | [CASOS_PRUEBA_EVIDENCIA_81.md](CASOS_PRUEBA_EVIDENCIA_81.md) |
 | **Herramienta de pruebas** | Node.js + Puppeteer v22 / Revisión manual en navegador |
 | **Entorno de prueba** | Web – Apache/XAMPP – macOS |
 

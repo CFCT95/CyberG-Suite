@@ -1,6 +1,15 @@
 # CASOS DE PRUEBA – CyberG Suite
 ## GA9-220501096-AA2-EV01 — Diseño de Casos y Ambiente de Pruebas
 
+> **Documentos relacionados:**
+> - [Lista de Chequeo – Evidencia 81](EVIDENCIA_81_CHECKLIST.md)
+> - [Informe de Pruebas – Evidencia 80](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md)
+> - [Checklist – Evidencia 80](EVIDENCIA_80_CHECKLIST.md)
+> - [Script de pruebas Puppeteer](react-frontend/test_ui.js)
+> - [Captura de UI validada](react-frontend/captura_inicio.png)
+> - [Base de datos](database_setup.sql)
+> - [Repositorio completo](https://github.com/CFCT95/CyberG-Suite)
+
 ---
 
 ## 1. Datos del Proyecto y Ambiente
@@ -49,14 +58,14 @@
 | **Ambiente / Entorno** | Web – Apache/XAMPP – macOS – Edge v123 |
 | **Herramienta** | Revisión manual en navegador |
 | **Autor** | Cristian Ferney Castaño Torres |
-| **Precondiciones** | Apache y MySQL corriendo en XAMPP. Base de datos `cyberg_suite` inicializada con `database_setup.sql`. El correo a registrar no existe previamente en la DB. |
-| **Pasos de ejecución** | 1. Abrir `http://localhost:8080/CyberG-Suite/registro.php` · 2. Completar: Nombre, Correo, Contraseña y confirmar contraseña · 3. Clic en "Registrarse" |
+| **Precondiciones** | Apache y MySQL corriendo en XAMPP. Base de datos inicializada con [database_setup.sql](database_setup.sql). El correo a registrar no existe previamente en la DB. |
+| **Pasos de ejecución** | 1. Abrir `http://localhost:8080/CyberG-Suite/` · 2. Clic en **Registrarse** · 3. Completar: Nombre, Correo, Contraseña y confirmar contraseña · 4. Clic en "Registrarse" |
 | **Salida esperada** | El sistema crea el usuario en la DB y redirige al login con un mensaje de confirmación. |
 | **Salida obtenida** | El usuario fue registrado correctamente y se redirigió al login. |
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Captura de formulario de registro diligenciado + redirección exitosa al login. Ver repositorio: [captura_inicio.png](react-frontend/captura_inicio.png) |
+| **Evidencia** | Ver módulo de registro: [registro.php](registro.php) · Captura de interfaz: [captura_inicio.png](react-frontend/captura_inicio.png) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -73,14 +82,14 @@
 | **Ambiente / Entorno** | Web – Apache/XAMPP – macOS – Edge v123 |
 | **Herramienta** | Revisión manual en navegador |
 | **Autor** | Cristian Ferney Castaño Torres |
-| **Precondiciones** | El usuario debe existir previamente en la base de datos (creado en CP-001). Apache y MySQL corriendo. |
+| **Precondiciones** | El usuario debe existir previamente en la base de datos (ejecutar CP-001 primero). Apache y MySQL corriendo. |
 | **Pasos de ejecución** | 1. Abrir `http://localhost:8080/CyberG-Suite/login.php` · 2. Ingresar correo y contraseña válidos · 3. Clic en "Iniciar sesión" |
 | **Salida esperada** | El sistema autentica al usuario y lo redirige al dashboard principal. |
 | **Salida obtenida** | Acceso concedido. Se redirigió correctamente al dashboard. |
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Captura de login exitoso y carga del dashboard. Repositorio: https://github.com/CFCT95/CyberG-Suite |
+| **Evidencia** | Módulo de login: [login.php](login.php) · Dashboard: [dashboard.php](dashboard.php) · Repositorio: [github.com/CFCT95/CyberG-Suite](https://github.com/CFCT95/CyberG-Suite) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -97,14 +106,14 @@
 | **Ambiente / Entorno** | Web – Apache/XAMPP – macOS – Edge v123 |
 | **Herramienta** | Revisión manual en navegador |
 | **Autor** | Cristian Ferney Castaño Torres |
-| **Precondiciones** | Usuario existente en base de datos. Apache y MySQL corriendo. |
-| **Pasos de ejecución** | 1. Abrir `login.php` · 2. Ingresar correo válido + contraseña INCORRECTA · 3. Clic en "Iniciar sesión" |
+| **Precondiciones** | Usuario existente en base de datos (ver CP-001). Apache y MySQL corriendo. |
+| **Pasos de ejecución** | 1. Abrir [login.php](login.php) · 2. Ingresar correo válido + contraseña incorrecta · 3. Clic en "Iniciar sesión" |
 | **Salida esperada** | El sistema NO concede acceso y muestra un mensaje de error indicando credenciales incorrectas. |
 | **Salida obtenida** | Se mostró el mensaje de error. El sistema no permitió el acceso. |
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Captura de pantalla del mensaje de error en el formulario de login. |
+| **Evidencia** | Módulo evaluado: [login.php](login.php) · Lógica de autenticación revisada en [db.php](db.php) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -121,14 +130,14 @@
 | **Ambiente / Entorno** | Web – Apache/XAMPP – macOS – Edge v123 |
 | **Herramienta** | Revisión manual en navegador |
 | **Autor** | Cristian Ferney Castaño Torres |
-| **Precondiciones** | Apache corriendo. Navegador abierto en `registro.php`. |
-| **Pasos de ejecución** | 1. Abrir `registro.php` · 2. Dejar todos los campos en blanco · 3. Clic en "Registrarse" |
+| **Precondiciones** | Apache corriendo. Navegador abierto en [registro.php](registro.php). |
+| **Pasos de ejecución** | 1. Abrir [registro.php](registro.php) · 2. Dejar todos los campos en blanco · 3. Clic en "Registrarse" |
 | **Salida esperada** | El navegador o el servidor bloquea el envío y muestra indicadores de campo requerido en los inputs vacíos. |
 | **Salida obtenida** | El formulario bloqueó el envío y marcó los campos obligatorios vacíos. |
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Captura mostrando los campos marcados como requeridos sin datos. |
+| **Evidencia** | Módulo evaluado: [registro.php](registro.php) · Ver estructura HTML de validaciones en el mismo archivo. |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -145,14 +154,14 @@
 | **Ambiente / Entorno** | Web – Apache/XAMPP – macOS – Edge v123 |
 | **Herramienta** | Revisión manual en navegador |
 | **Autor** | Cristian Ferney Castaño Torres |
-| **Precondiciones** | No tener sesión activa (cerrar sesión o usar ventana de incógnito). |
-| **Pasos de ejecución** | 1. Abrir ventana de incógnito · 2. Escribir directamente `http://localhost:8080/CyberG-Suite/dashboard.php` · 3. Observar el comportamiento |
-| **Salida esperada** | El sistema detecta que no hay sesión activa y redirige automáticamente a `login.php`. |
+| **Precondiciones** | No tener sesión activa (usar ventana de incógnito o ejecutar [logout.php](logout.php) primero). |
+| **Pasos de ejecución** | 1. Abrir ventana de incógnito · 2. Ingresar directamente a `http://localhost:8080/CyberG-Suite/dashboard.php` · 3. Observar el comportamiento |
+| **Salida esperada** | El sistema detecta que no hay sesión y redirige automáticamente a [login.php](login.php). |
 | **Salida obtenida** | Se redirigió correctamente al login. El dashboard no fue accesible sin autenticación. |
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Captura mostrando la redirección automática al login al intentar acceder al dashboard. |
+| **Evidencia** | Módulo protegido: [dashboard.php](dashboard.php) · Lógica de sesión en [logout.php](logout.php) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -169,14 +178,14 @@
 | **Ambiente / Entorno** | Web – Apache/XAMPP – macOS – Edge v123 |
 | **Herramienta** | Revisión manual en navegador |
 | **Autor** | Cristian Ferney Castaño Torres |
-| **Precondiciones** | Usuario registrado en la DB. Apache y MySQL corriendo. |
-| **Pasos de ejecución** | 1. Abrir `recuperar.php` · 2. Ingresar el correo del usuario registrado · 3. Enviar el formulario |
-| **Salida esperada** | El sistema procesa la solicitud sin errores PHP y muestra un mensaje indicando que se procesó la recuperación. |
+| **Precondiciones** | Usuario registrado en la DB (ver CP-001). Apache y MySQL corriendo. |
+| **Pasos de ejecución** | 1. Abrir [recuperar.php](recuperar.php) · 2. Ingresar el correo del usuario registrado · 3. Clic en enviar |
+| **Salida esperada** | El sistema procesa la solicitud sin errores PHP y muestra un mensaje de confirmación. |
 | **Salida obtenida** | El sistema respondió correctamente sin errores de servidor. |
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Captura de la respuesta del módulo de recuperación. |
+| **Evidencia** | Módulo evaluado: [recuperar.php](recuperar.php) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -193,14 +202,14 @@
 | **Ambiente / Entorno** | Web – Headless Chromium – Node.js v18 – macOS |
 | **Herramienta** | Node.js + Puppeteer v22 |
 | **Autor** | Cristian Ferney Castaño Torres |
-| **Precondiciones** | Node.js instalado. Archivo `react-frontend/test_ui.js` disponible en repositorio. |
-| **Pasos de ejecución** | 1. Abrir terminal en `/react-frontend` · 2. Ejecutar `node test_ui.js` · 3. Revisar output en consola |
+| **Precondiciones** | Node.js v18 instalado. Script disponible en [react-frontend/test_ui.js](react-frontend/test_ui.js). |
+| **Pasos de ejecución** | 1. Abrir terminal en `react-frontend/` · 2. Ejecutar `node test_ui.js` · 3. Revisar output en consola |
 | **Salida esperada** | `✅ [Éxito] Todas las validaciones de UI pasaron correctamente.` y captura `captura_inicio.png` generada. |
 | **Salida obtenida** | Script ejecutó correctamente. Título: "CyberG Suite". H1: "Bienvenido a CyberG Suite". Captura generada. |
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Log de consola + `react-frontend/captura_inicio.png`. Ver en: https://github.com/CFCT95/CyberG-Suite |
+| **Evidencia** | Script: [react-frontend/test_ui.js](react-frontend/test_ui.js) · Captura: [react-frontend/captura_inicio.png](react-frontend/captura_inicio.png) · Informe completo: [INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
