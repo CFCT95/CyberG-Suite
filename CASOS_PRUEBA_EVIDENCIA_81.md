@@ -65,7 +65,7 @@
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Ver módulo de registro: [registro.php](registro.php) · Captura de interfaz: [captura_inicio.png](react-frontend/captura_inicio.png) |
+| **Evidencia** | Formulario: [evidencias/cp001_registro.png](evidencias/cp001_registro.png) · Registro en DB: [evidencias/cp001_db_registro.png](evidencias/cp001_db_registro.png) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -89,7 +89,7 @@
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Módulo de login: [login.php](login.php) · Dashboard: [dashboard.php](dashboard.php) · Repositorio: [github.com/CFCT95/CyberG-Suite](https://github.com/CFCT95/CyberG-Suite) |
+| **Evidencia** | Login exitoso: [evidencias/cp002_login_exitoso.png](evidencias/cp002_login_exitoso.png) · Módulo: [login.php](login.php) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -113,7 +113,7 @@
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Módulo evaluado: [login.php](login.php) · Lógica de autenticación revisada en [db.php](db.php) |
+| **Evidencia** | Mensaje de error en login: [evidencias/cp003_login_fallido.png](evidencias/cp003_login_fallido.png) · Módulo: [login.php](login.php) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -137,7 +137,7 @@
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Módulo evaluado: [registro.php](registro.php) · Ver estructura HTML de validaciones en el mismo archivo. |
+| **Evidencia** | Campos obligatorios sin datos: [evidencias/cp004_campos_vacios.png](evidencias/cp004_campos_vacios.png) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -185,7 +185,7 @@
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Módulo evaluado: [recuperar.php](recuperar.php) |
+| **Evidencia** | Pantalla de recuperación: [evidencias/cp006_recuperar.png](evidencias/cp006_recuperar.png) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
@@ -209,7 +209,7 @@
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Script: [react-frontend/test_ui.js](react-frontend/test_ui.js) · Captura: [react-frontend/captura_inicio.png](react-frontend/captura_inicio.png) · Informe completo: [INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md) |
+| **Evidencia** | Captura UI validada: [react-frontend/captura_inicio.png](react-frontend/captura_inicio.png) · Script: [react-frontend/test_ui.js](react-frontend/test_ui.js) · Informe: [INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md](INFORME_PRUEBAS_SOFTWARE_EVIDENCIA_80.md) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
