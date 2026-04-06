@@ -137,7 +137,7 @@
 | **Resultado** | ✅ Aprobado |
 | **Seguimiento** | N/A |
 | **Severidad** | N/A |
-| **Evidencia** | Campos obligatorios sin datos: [evidencias/cp004_campos_vacios.png](evidencias/cp004_campos_vacios.png) |
+| **Evidencia** | Campos obligatorios sin datos: [evidencias/cp004_campos_vacios.png](evidencias/cp004_campos_vacios.png) · Validaciones de formulario: [evidencias/cp004_validaciones.png](evidencias/cp004_validaciones.png) |
 | **Firma de aprobación** | Cristian F. Castaño Torres – Aprendiz SENA Ficha 3070422 |
 
 ---
