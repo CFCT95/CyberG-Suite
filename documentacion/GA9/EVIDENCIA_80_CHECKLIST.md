@@ -47,7 +47,7 @@
 | Investiga y selecciona una herramienta de pruebas. | **Cumple** | Se eligió y configuró un entorno de `Node.js` usando librerías nativas (`assert` y `fs`) por fiabilidad de red local, para validar las reglas del DOM. |
 | Evidencia de instalación en el computador (captura/registro). | **Cumple** | Se anexó la transcripción del log instalador local (`npm install`) en el PDF como evidencia legal (ítem 4.2). |
 | Describe versión de la herramienta y requisitos mínimos. | **Cumple** | Entorno Node v18+; No requiere dependencias web externas debido a la adaptación del entorno. |
-| Configura la herramienta para ejecutar pruebas básicas. | **Cumple** | Script creado en la ruta local: URL: [react-frontend/test_ui.js](react-frontend/test_ui.js) para parsear y evaluar `<title>` y `<h1>` estáticos del proyecto. |
+| Configura la herramienta para ejecutar pruebas básicas. | **Cumple** | Script creado en la ruta local: URL: [react-frontend/test_ui.js](../../react-frontend/test_ui.js) para parsear y evaluar `<title>` y `<h1>` estáticos del proyecto. |
 
 ---
 

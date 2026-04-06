@@ -131,7 +131,7 @@ Terminando ejecución de prueba.
 
 **Evidencia de la Solución Testeada:**
 
-![Captura de la Solución (CyberG Suite)](react-frontend/captura_inicio.png)
+![Captura de la Solución (CyberG Suite)](evidencias/cp001_registro.png)
 *Figura 1: Captura de pantalla del DOM y renderizado de la interfaz inicial del sistema tras finalizar exitosamente la validación UI.*
 
 ---
